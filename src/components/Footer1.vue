@@ -1,10 +1,8 @@
-<script setup>
-
-</script>
+<script setup></script>
 <template>
- <div class="footer">
+  <div class="footer">
     <div class="logo">
-      <img src="@/assets/img1/logo1.png" class="img2"/>
+      <img src="@/assets/img1/logo1.png" class="img2" />
     </div>
     <div class="menu">
       <ul>
@@ -44,7 +42,6 @@
           <a href="##"><p>热管理系统设计</p></a>
           <a href="##"><p>电池工况模拟系统</p></a>
           <a href="##"><p>智能化成于分容设备</p></a>
-
         </li>
       </ul>
       <ul>
@@ -79,60 +76,59 @@
       </ul>
     </div>
     <div class="bott">
-    <div class="line">
-      <a  href="##">联系我们</a> <span>Tel：18801151621</span>
+      <div class="line">
+        <a href="##">联系我们</a> <span>Tel：18801151621</span>
+      </div>
+      <div class="sild">
+        <p>
+          Privacy Terms of Use Legal & Compliance Copyright © 2004-2025 . All
+          rights reserved,
+        </p>
+        <span>Back to </span>
+      </div>
     </div>
-    <div class="sild">
-      <p>Privacy  Terms of Use  Legal & Compliance   Copyright © 2004-2025 . All rights reserved,</p>
-      <span>Back to </span>
-    </div>
-    </div>
-
- </div>
-
+  </div>
 </template>
 
 <style scoped lang="less">
-.footer{
+.footer {
   padding: 6% 4% 4% 4%;
-  .logo{
+  .logo {
     border-bottom: 1px solid #bcbcbc;
     padding-bottom: 20px;
   }
-  .menu{
+  .menu {
     padding: 20px 3% 5% 3%;
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    ul{
-      li{
-        h5{
+    justify-content: space-between;
+    align-items: flex-start;
+    ul {
+      li {
+        h5 {
           color: #333;
           font-size: 25px;
           height: 25px;
           margin: 0;
         }
-        p.first{
+        p.first {
           margin-top: 30px;
         }
       }
     }
   }
-  .bott{
-    .line{
+  .bott {
+    .line {
       border-bottom: 1px solid #bcbcbc;
       padding-bottom: 20px;
       margin-bottom: 20px;
-      span{
+      span {
         margin-left: 50px;
       }
     }
-    .sild{
-       display: flex;
-       justify-content: space-between;
+    .sild {
+      display: flex;
+      justify-content: space-between;
     }
   }
- 
 }
 </style>
-
