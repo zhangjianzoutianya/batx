@@ -425,11 +425,11 @@ import $ from "jquery";
 
     .venn {
       position: relative;
-      width: 580px;
+      width: 600px;
       height: 300px;
       .circle {
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
         border-radius: 50%;
         position: absolute;
         top: 0;

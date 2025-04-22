@@ -120,51 +120,6 @@ onBeforeUnmount(() => {
         </div>
       </div>
     </div>
-    <div class="index_solu">
-      <h5>解决方案</h5>
-      <div class="index_solu_box">
-        <div class="solu_box solu_box1">
-          <div class="imgBg"></div>
-          <div class="img">
-            <img src="@/assets/img1/solu1.jpg" />
-          </div>
-          <div class="text">
-            <h5>系统产品开发</h5>
-            <p>System Product R&D</p>
-          </div>
-        </div>
-        <div class="solu_box solu_box2">
-          <div class="imgBg"></div>
-          <div class="img">
-            <img src="@/assets/img1/solu2.jpg" />
-          </div>
-          <div class="text">
-            <h5>系统产品开发</h5>
-            <p>System Product R&D</p>
-          </div>
-        </div>
-        <div class="solu_box solu_box3">
-          <div class="imgBg"></div>
-          <div class="img">
-            <img src="@/assets/img1/solu3.jpg" />
-          </div>
-          <div class="text">
-            <h5>系统产品开发</h5>
-            <p>System Product R&D</p>
-          </div>
-        </div>
-        <div class="solu_box solu_box4">
-          <div class="imgBg"></div>
-          <div class="img">
-            <img src="@/assets/img1/solu4.jpg" />
-          </div>
-          <div class="text">
-            <h5>系统产品开发</h5>
-            <p>System Product R&D</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="index_solu">
       <h5>解决方案</h5>
@@ -212,6 +167,7 @@ onBeforeUnmount(() => {
       </div>
     </div>
     <div class="index_service" ref="section">
+      <h5>产品服务</h5>
       <div class="index_service_box">
         <div
           class="index_service_list"
@@ -222,70 +178,112 @@ onBeforeUnmount(() => {
             <div class="img">
               <img src="@/assets/img1/prod1.jpg" />
             </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod2.jpg" />
+            </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod3.jpg" />
             </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod4.jpg" />
+            </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod5.jpg" />
             </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod6.jpg" />
+            </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod7.jpg" />
             </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod8.jpg" />
+            </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod9.jpg" />
             </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod10.jpg" />
+            </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod11.jpg" />
             </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod12.jpg" />
+            </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod13.jpg" />
             </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
           </div>
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod14.jpg" />
+            </div>
+            <div class="text">
+              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
         </div>
@@ -572,18 +570,24 @@ onBeforeUnmount(() => {
 .index_service {
   height: 300vh;
   position: relative;
+  padding: 6% 0 6% 4%;
+  background: #e4e6ee;
+  > h5 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+    margin: 0 0 3% 0;
+  }
   .index_service_box {
     position: sticky;
     top: 0;
-    height: 100vh;
+    // height: 100vh;
     overflow: hidden;
-    background: #e4e6ee;
     .index_service_list {
       display: flex;
       flex-wrap: wrap;
       height: 100%;
       width: 234vw;
-      padding: 6% 0 6% 4%;
       transition: transform 0.3s ease-out;
       overflow: hidden;
       .item {
@@ -594,6 +598,22 @@ onBeforeUnmount(() => {
         align-items: flex-start;
         justify-content: center;
         margin-right: 5vw;
+        position: relative;
+        margin-bottom: 80px;
+        .text {
+          width: 100%;
+          position: absolute;
+          top: 105%;
+          border-top: 1px solid #7f8081;
+          padding-top: 10px;
+          p {
+            color: #000;
+            font-size: 16px;
+            img {
+              margin: 10px 0 0 10px;
+            }
+          }
+        }
         .img {
           width: 100%;
           img {
