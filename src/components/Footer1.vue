@@ -92,13 +92,16 @@
 
 <style scoped lang="less">
 .footer {
-  padding: 6% 4% 4% 4%;
+  padding: 6% 4% 1% 4%;
   .logo {
     border-bottom: 1px solid #bcbcbc;
     padding-bottom: 20px;
+    .img2 {
+      height: 24px;
+    }
   }
   .menu {
-    padding: 20px 3% 5% 3%;
+    padding: 20px 5% 5% 5%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -106,7 +109,8 @@
       li {
         h5 {
           color: #333;
-          font-size: 25px;
+          font-size: 20px;
+          font-weight: 500;
           height: 25px;
           margin: 0;
         }

@@ -4,13 +4,11 @@ import $ from "jquery";
 import Top from "@/components/Top1.vue";
 import Footer from "@/components/Footer1.vue";
 
-$(".banner").height($(window).height());
-console.log($(".banner").height());
-
 const section = ref(null);
 const content = ref(null);
 
 const translateX = ref(0);
+const translateY = ref(0);
 
 console.log($(".index_pro"));
 
@@ -28,16 +26,21 @@ const handleScroll = () => {
   if (scrollY < sectionTop) {
     // 当滚动位置在section顶部之前时，重置translateX为0
     translateX.value = 0;
+    translateY.value = 0;
   } else if (scrollY >= sectionTop && scrollY <= sectionTop + maxScroll) {
     const progress = (scrollY - sectionTop) / maxScroll;
     translateX.value = progress * totalScrollLength;
+    translateY.value = -(progress * totalScrollLength) / 12;
   } else {
     // 当滚动超过section底部时，保持最大translateX值
     translateX.value = totalScrollLength;
+    translateY.value = -totalScrollLength / 12;
   }
 };
 
 onMounted(() => {
+  $(".banner").height($(window).height());
+  console.log($(".banner").height());
   window.addEventListener("scroll", handleScroll);
 });
 
@@ -51,15 +54,7 @@ onBeforeUnmount(() => {
     <Top />
     <div class="banner">
       <div class="banner_list">
-        <video
-          ref="videoPlayer"
-          width="100%"
-          controls
-          autoplay
-          muted
-          loop
-          playsinline
-        >
+        <video ref="videoPlayer" width="100%" autoplay muted loop playsinline>
           <source src="@/assets/img1/banner1.mp4" type="video/mp4" />
         </video>
         <div class="banner_bg"></div>
@@ -172,7 +167,9 @@ onBeforeUnmount(() => {
         <div
           class="index_service_list"
           ref="content"
-          :style="{ transform: `translateX(-${translateX}px)` }"
+          :style="{
+            transform: `translateX(-${translateX}px) translateY(${translateY}px)`,
+          }"
         >
           <div class="item">
             <div class="img">
@@ -187,7 +184,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod2.jpg" />
             </div>
             <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热蔓延建模仿真 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -195,31 +192,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod3.jpg" />
             </div>
             <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod4.jpg" />
-            </div>
-            <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod5.jpg" />
-            </div>
-            <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod6.jpg" />
-            </div>
-            <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热管理系统设计 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -227,7 +200,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod7.jpg" />
             </div>
             <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+              <p>工艺仿真与优化软件 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -235,7 +208,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod8.jpg" />
             </div>
             <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+              <p>资产安全预警软件 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -243,31 +216,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod9.jpg" />
             </div>
             <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod10.jpg" />
-            </div>
-            <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod11.jpg" />
-            </div>
-            <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod12.jpg" />
-            </div>
-            <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+              <p>寿命估计预测软件 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -275,7 +224,55 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod13.jpg" />
             </div>
             <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+              <p>智能补电与均衡仪 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="@/assets/img1/prod4.jpg" />
+            </div>
+            <div class="text">
+              <p>电池工况模拟系统 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="@/assets/img1/prod5.jpg" />
+            </div>
+            <div class="text">
+              <p>智能化成与分容设备 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="@/assets/img1/prod6.jpg" />
+            </div>
+            <div class="text">
+              <p>电池制造产线大数据 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="@/assets/img1/prod10.jpg" />
+            </div>
+            <div class="text">
+              <p>析锂预警与检测软件 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="@/assets/img1/prod11.jpg" />
+            </div>
+            <div class="text">
+              <p>系统快充策略开发软件 <img src="@/assets/img1/jtop.png" /></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img src="@/assets/img1/prod12.jpg" />
+            </div>
+            <div class="text">
+              <p>系统不一致性估计 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -283,7 +280,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod14.jpg" />
             </div>
             <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+              <p>电池资产检测评估报告 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
         </div>
@@ -345,18 +342,38 @@ onBeforeUnmount(() => {
   overflow: hidden;
   .banner_list {
     width: 100%;
-    position: relative;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+    .banner_bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
     .banner_txt {
       position: absolute;
-      left: 5%;
-      bottom: 10%;
+      left: 4%;
+      bottom: 24%;
       color: #fff;
       h5 {
         font-size: 45px;
         margin-bottom: 40px;
+        font-weight: 400;
       }
       p {
         font-size: 25px;
+        font-weight: 300;
         color: #fff;
       }
     }
@@ -570,26 +587,29 @@ onBeforeUnmount(() => {
 .index_service {
   height: 300vh;
   position: relative;
-  padding: 6% 0 6% 4%;
   background: #e4e6ee;
   > h5 {
     font-size: 36px;
     font-weight: 400;
     color: #000;
     margin: 0 0 3% 0;
+    position: absolute;
+    top: 3vw;
+    left: 4%;
   }
   .index_service_box {
     position: sticky;
     top: 0;
-    // height: 100vh;
+    height: 100vh;
     overflow: hidden;
+    padding-left: 4%;
     .index_service_list {
       display: flex;
       flex-wrap: wrap;
+      align-items: flex-end;
       height: 100%;
       width: 234vw;
       transition: transform 0.3s ease-out;
-      overflow: hidden;
       .item {
         width: 27vw;
         flex-shrink: 0;
@@ -609,7 +629,9 @@ onBeforeUnmount(() => {
           p {
             color: #000;
             font-size: 16px;
+            font-weight: 400;
             img {
+              width: 16px;
               margin: 10px 0 0 10px;
             }
           }
@@ -621,44 +643,47 @@ onBeforeUnmount(() => {
             width: 100%;
           }
         }
+        &:nth-child(1) {
+          transform: translateY(7vh);
+        }
         &:nth-child(2) {
-          transform: translateY(2vh);
-        }
-        &:nth-child(3) {
-          transform: translateY(4vh);
-        }
-        &:nth-child(4) {
-          transform: translateY(6vh);
-        }
-        &:nth-child(5) {
-          transform: translateY(8vh);
-        }
-        &:nth-child(6) {
           transform: translateY(10vh);
         }
+        &:nth-child(3) {
+          transform: translateY(13vh);
+        }
+        &:nth-child(4) {
+          transform: translateY(16vh);
+        }
+        &:nth-child(5) {
+          transform: translateY(19vh);
+        }
+        &:nth-child(6) {
+          transform: translateY(22vh);
+        }
         &:nth-child(7) {
-          transform: translateY(12vh);
+          transform: translateY(25vh);
         }
         &:nth-child(8) {
-          transform: translateX(7vw) translateY(2vh);
+          transform: translateX(6vw) translateY(1vh);
         }
         &:nth-child(9) {
-          transform: translateX(7vw) translateY(4vh);
+          transform: translateX(6vw) translateY(4vh);
         }
         &:nth-child(10) {
-          transform: translateX(7vw) translateY(6vh);
+          transform: translateX(6vw) translateY(7vh);
         }
         &:nth-child(11) {
-          transform: translateX(7vw) translateY(8vh);
+          transform: translateX(6vw) translateY(10vh);
         }
         &:nth-child(12) {
-          transform: translateX(7vw) translateY(10vh);
+          transform: translateX(6vw) translateY(13vh);
         }
         &:nth-child(13) {
-          transform: translateX(7vw) translateY(12vh);
+          transform: translateX(6vw) translateY(16vh);
         }
         &:nth-child(14) {
-          transform: translateX(7vw) translateY(14vh);
+          transform: translateX(6vw) translateY(19vh);
         }
       }
     }

@@ -109,7 +109,7 @@ import $ from "jquery";
   .nav {
     a {
       span {
-        color: #bcbcbc;
+        color: #212121;
       }
     }
   }
