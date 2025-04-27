@@ -30,11 +30,11 @@ const handleScroll = () => {
   } else if (scrollY >= sectionTop && scrollY <= sectionTop + maxScroll) {
     const progress = (scrollY - sectionTop) / maxScroll;
     translateX.value = progress * totalScrollLength;
-    translateY.value = -(progress * totalScrollLength) / 12;
+    translateY.value = -(progress * totalScrollLength) / 14;
   } else {
     // 当滚动超过section底部时，保持最大translateX值
     translateX.value = totalScrollLength;
-    translateY.value = -totalScrollLength / 12;
+    translateY.value = -totalScrollLength / 14;
   }
 };
 
@@ -59,15 +59,15 @@ onBeforeUnmount(() => {
         </video>
         <div class="banner_bg"></div>
         <div class="banner_txt">
-          <h5 class="animateHide">
-            电池全生命周期
+          <h5>
+            电池全生命周期智
             <br />
-            智能化服务商
+            能化服务商
           </h5>
-          <p class="animateHide">
-            Battery life cycle
+          <p>
+            Battery life cycle Intelligent
             <br />
-            Intelligent service provider
+            service provider
           </p>
         </div>
       </div>
@@ -292,25 +292,24 @@ onBeforeUnmount(() => {
         <div class="marquee-content">
           <img src="@/assets/img1/partner1.png" alt="logo" />
           <img src="@/assets/img1/partner2.png" alt="logo" />
-          <img src="@/assets/img1/partner3.png" alt="logo" />
           <img src="@/assets/img1/partner4.png" alt="logo" />
           <img src="@/assets/img1/partner5.png" alt="logo" />
           <img src="@/assets/img1/partner6.png" alt="logo" />
           <img src="@/assets/img1/partner7.png" alt="logo" />
           <img src="@/assets/img1/partner8.png" alt="logo" />
+          <img src="@/assets/img1/partner9.png" alt="logo" />
           <img src="@/assets/img1/partner1.png" alt="logo" />
           <img src="@/assets/img1/partner2.png" alt="logo" />
-          <img src="@/assets/img1/partner3.png" alt="logo" />
           <img src="@/assets/img1/partner4.png" alt="logo" />
           <img src="@/assets/img1/partner5.png" alt="logo" />
           <img src="@/assets/img1/partner6.png" alt="logo" />
           <img src="@/assets/img1/partner7.png" alt="logo" />
           <img src="@/assets/img1/partner8.png" alt="logo" />
+          <img src="@/assets/img1/partner9.png" alt="logo" />
         </div>
       </div>
       <div class="marquee marquee-right">
         <div class="marquee-content">
-          <img src="@/assets/img1/partner9.png" alt="logo" />
           <img src="@/assets/img1/partner10.png" alt="logo" />
           <img src="@/assets/img1/partner11.png" alt="logo" />
           <img src="@/assets/img1/partner12.png" alt="logo" />
@@ -319,7 +318,6 @@ onBeforeUnmount(() => {
           <img src="@/assets/img1/partner15.png" alt="logo" />
           <img src="@/assets/img1/partner16.png" alt="logo" />
           <img src="@/assets/img1/partner17.png" alt="logo" />
-          <img src="@/assets/img1/partner9.png" alt="logo" />
           <img src="@/assets/img1/partner10.png" alt="logo" />
           <img src="@/assets/img1/partner11.png" alt="logo" />
           <img src="@/assets/img1/partner12.png" alt="logo" />
@@ -370,6 +368,7 @@ onBeforeUnmount(() => {
         font-size: 45px;
         margin-bottom: 40px;
         font-weight: 400;
+        letter-spacing: 4px;
       }
       p {
         font-size: 25px;
@@ -381,7 +380,7 @@ onBeforeUnmount(() => {
 }
 .index_pro {
   width: 100%;
-  padding: 6% 4%;
+  padding: 6% 4% 4% 4%;
   > h5 {
     font-size: 36px;
     font-weight: 400;
@@ -411,11 +410,11 @@ onBeforeUnmount(() => {
         z-index: 2;
         h5 {
           color: #fff;
-          font-size: 20px;
+          font-size: 22px;
         }
         p {
           color: #fff;
-          font-size: 14px;
+          font-size: 16px;
         }
       }
       .writ_bot {
@@ -432,7 +431,7 @@ onBeforeUnmount(() => {
           span {
             color: #fff;
             margin-right: 10px;
-            font-size: 14px;
+            font-size: 16px;
           }
         }
       }
@@ -447,7 +446,7 @@ onBeforeUnmount(() => {
         -webkit-opacity: 0;
         filter: alpha(opacity=0);
         img {
-          width: 50px;
+          width: 40px;
         }
       }
       .txt {
@@ -508,7 +507,7 @@ onBeforeUnmount(() => {
 }
 .index_solu {
   width: 100%;
-  padding: 6% 4%;
+  padding: 4% 4% 6%;
   > h5 {
     font-size: 36px;
     font-weight: 400;
@@ -552,11 +551,11 @@ onBeforeUnmount(() => {
         color: #fff;
         z-index: 2;
         h5 {
-          font-size: 18px;
+          font-size: 20px;
         }
         p {
           color: #fff;
-          font-size: 18px;
+          font-size: 20px;
         }
       }
     }
@@ -602,16 +601,15 @@ onBeforeUnmount(() => {
     top: 0;
     height: 100vh;
     overflow: hidden;
+    padding-top: 7%;
     padding-left: 4%;
     .index_service_list {
       display: flex;
       flex-wrap: wrap;
-      align-items: flex-end;
-      height: 100%;
-      width: 234vw;
+      width: 220vw;
       transition: transform 0.3s ease-out;
       .item {
-        width: 27vw;
+        width: 25vw;
         flex-shrink: 0;
         font-weight: bold;
         display: flex;
@@ -644,46 +642,46 @@ onBeforeUnmount(() => {
           }
         }
         &:nth-child(1) {
-          transform: translateY(7vh);
+          transform: translateY(1vh);
         }
         &:nth-child(2) {
-          transform: translateY(10vh);
+          transform: translateY(4vh);
         }
         &:nth-child(3) {
-          transform: translateY(13vh);
+          transform: translateY(7vh);
         }
         &:nth-child(4) {
-          transform: translateY(16vh);
+          transform: translateY(10vh);
         }
         &:nth-child(5) {
-          transform: translateY(19vh);
+          transform: translateY(13vh);
         }
         &:nth-child(6) {
-          transform: translateY(22vh);
+          transform: translateY(16vh);
         }
         &:nth-child(7) {
-          transform: translateY(25vh);
+          transform: translateY(19vh);
         }
         &:nth-child(8) {
-          transform: translateX(6vw) translateY(1vh);
+          transform: translateX(6vw) translateY(3vh);
         }
         &:nth-child(9) {
-          transform: translateX(6vw) translateY(4vh);
+          transform: translateX(6vw) translateY(6vh);
         }
         &:nth-child(10) {
-          transform: translateX(6vw) translateY(7vh);
+          transform: translateX(6vw) translateY(9vh);
         }
         &:nth-child(11) {
-          transform: translateX(6vw) translateY(10vh);
+          transform: translateX(6vw) translateY(12vh);
         }
         &:nth-child(12) {
-          transform: translateX(6vw) translateY(13vh);
+          transform: translateX(6vw) translateY(15vh);
         }
         &:nth-child(13) {
-          transform: translateX(6vw) translateY(16vh);
+          transform: translateX(6vw) translateY(18vh);
         }
         &:nth-child(14) {
-          transform: translateX(6vw) translateY(19vh);
+          transform: translateX(6vw) translateY(21vh);
         }
       }
     }
@@ -714,9 +712,9 @@ onBeforeUnmount(() => {
     .marquee-content {
       display: inline-flex;
       align-items: center;
-      gap: 30px; /* logo 之间的间距 */
+      gap: 56px; /* logo 之间的间距 */
       img {
-        height: 60px; /* 根据需要调整 */
+        height: 56px; /* 根据需要调整 */
         width: auto;
       }
     }

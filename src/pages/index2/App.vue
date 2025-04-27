@@ -1,29 +1,48 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from "vue";
 import $ from "jquery";
+import Top from "@/components/Top2.vue";
+import Footer from "@/components/Footer1.vue";
+
+var IndexLogo = function () {
+  var index = 0;
+  setInterval(function () {
+    index = Math.round(Math.random() * 12);
+    $(".index_logo_list").removeClass("active");
+    $(".index_logo_list").eq(index).addClass("active");
+  }, 4000);
+};
+
+onMounted(() => {
+  $(".banner").height($(window).height());
+  $(".index_solut_box").height($(".index_solut_box").width() * 0.42);
+  $(".block_item").width($(".index_solut_box").width() * 0.64);
+  IndexLogo();
+  $(".block").hover(
+    function () {
+      $(".block").removeClass("active");
+      $(this).addClass("active");
+    },
+    function () {}
+  );
+});
+
+onBeforeUnmount(() => {});
 </script>
 
 <template>
   <div id="page_cont">
-    <Top2 />
+    <Top />
     <div class="banner">
       <div class="banner_list">
-        <video
-          ref="videoPlayer"
-          width="100%"
-          controls
-          autoplay
-          muted
-          loop
-          playsinline
-        >
+        <video ref="videoPlayer" width="100%" autoplay muted loop playsinline>
           <source src="@/assets/img2/banner2.mp4" type="video/mp4" />
         </video>
         <div class="banner_bg"></div>
         <div class="banner_txt">
-          <h5 class="animateHide">
-            电池全生命周期智能化
-            <br />
-            服务商 <span>始于安全 拥抱智能 创新无限 </span>
+          <h5>
+            电池全生命周期智能化 服务商 <br />
+            <span> <i>始于安全</i> <i>拥抱智能</i> <i>创新无限</i> </span>
           </h5>
         </div>
       </div>
@@ -100,28 +119,56 @@ import $ from "jquery";
 
     <div class="index_solut">
       <h5>解决方案</h5>
-      <div class="container">
-        <div class="panel">
-          <h3>系统产品开发<br />System Product R&D</h3>
-          <div class="btn">了解更多</div>
+      <div class="index_solut_box">
+        <div class="block active">
+          <div class="block_item">
+            <h3>系统产品开发<br />System Product R&D</h3>
+            <div class="btn">
+              了解更多 <img src="@/assets/img2/rigBtn.png" />
+            </div>
+            <div class="img">
+              <img src="@/assets/img2/index_so1.png" width="100%" />
+            </div>
+          </div>
         </div>
-        <div class="panel">
-          <h3>产线智能<br />Big Data</h3>
-          <div class="btn">了解更多</div>
+        <div class="block">
+          <div class="block_item">
+            <h3>产线智能<br />Big Data</h3>
+            <div class="btn">
+              了解更多<img src="@/assets/img2/rigBtn.png" />
+            </div>
+            <div class="img">
+              <img src="@/assets/img2/index_so2.png" width="100%" />
+            </div>
+          </div>
         </div>
-        <div class="panel">
-          <h3>大数据AI<br />Product AI</h3>
-          <div class="btn">了解更多</div>
+        <div class="block">
+          <div class="block_item">
+            <h3>大数据AI<br />Product AI</h3>
+            <div class="btn">
+              了解更多<img src="@/assets/img2/rigBtn.png" />
+            </div>
+            <div class="img">
+              <img src="@/assets/img2/index_so3.png" width="100%" />
+            </div>
+          </div>
         </div>
-        <div class="panel">
-          <h3>资产检测评估<br />Assessment & Test</h3>
-          <div class="btn">了解更多</div>
+        <div class="block">
+          <div class="block_item">
+            <h3>资产检测评估<br />Assessment & Test</h3>
+            <div class="btn">
+              了解更多<img src="@/assets/img2/rigBtn.png" />
+            </div>
+            <div class="img">
+              <img src="@/assets/img2/index_so4.png" width="100%" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="index_prod">
-      <h5>产品服务</h5>
+      <h5>产品&服务</h5>
       <div class="index_prod_list" id="brand_col">
         <ul class="left" id="leftCol">
           <li>
@@ -317,14 +364,27 @@ import $ from "jquery";
       </div>
     </div>
 
-    <Footer1 />
+    <Footer />
   </div>
 </template>
 
 <style scoped lang="less">
 .banner {
   position: relative;
+  overflow: hidden;
   .banner_list {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
     .banner_txt {
       position: absolute;
       left: 0;
@@ -334,10 +394,21 @@ import $ from "jquery";
       color: #ffffff;
       z-index: 5;
       h5 {
-        font-size: 50px;
+        font-size: 45px;
+        font-weight: 400;
+        margin-bottom: 0;
+        letter-spacing: 4px;
         span {
-          color: #ffffff;
-          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+          i {
+            color: #ffffff;
+            font-size: 20px;
+            font-style: normal;
+            margin: 0 6px;
+          }
         }
       }
     }
@@ -348,7 +419,8 @@ import $ from "jquery";
   padding: 5% 12%;
   > h5 {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: 400;
     color: #212121;
     margin: 0;
     margin-bottom: 5%;
@@ -459,13 +531,97 @@ import $ from "jquery";
 }
 
 .index_solut {
-  padding: 5% 12%;
+  padding: 5% 0 5% 5%;
+  overflow: hidden;
   > h5 {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: 400;
     color: #212121;
     margin: 0;
     margin-bottom: 5%;
+  }
+  .index_solut_box {
+    width: 106%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    .block {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      background-color: #9799a6;
+      font-size: 24px;
+      border-radius: 20px 0 0 20px;
+      position: relative;
+      left: 0;
+      width: 12%;
+      height: 100%;
+      overflow: hidden;
+      .block_item {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      h3 {
+        color: #ffffff;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 400;
+      }
+      .img {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        img {
+          height: 100%;
+          display: block;
+        }
+      }
+      .btn {
+        position: absolute;
+        left: 3%;
+        bottom: 5%;
+        width: 160px;
+        height: 60px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        color: #ffffff;
+        text-align: left;
+        font-size: 14px;
+        padding: 8px;
+        img {
+          position: absolute;
+          width: 6px;
+          bottom: 10px;
+          right: 8px;
+        }
+      }
+      &:nth-child(1) {
+        z-index: 1;
+      }
+      &:nth-child(2) {
+        z-index: 2;
+        left: -1%;
+        background-color: #2a57eb;
+      }
+      &:nth-child(3) {
+        z-index: 3;
+        left: -2%;
+        background-color: #e1e1e1;
+      }
+      &:nth-child(4) {
+        z-index: 3;
+        left: -3%;
+        background-color: #b5b7c5;
+      }
+    }
+    .block.active {
+      width: 64%;
+    }
   }
 }
 
@@ -475,7 +631,8 @@ import $ from "jquery";
   perspective: 1000px;
   > h5 {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: 400;
     color: #ffffff;
     margin: 0;
     margin-bottom: 5%;
@@ -520,7 +677,8 @@ import $ from "jquery";
   padding: 5% 12%;
   > h5 {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: 400;
     color: #212121;
     margin: 0;
     margin-bottom: 5%;
@@ -626,47 +784,3 @@ import $ from "jquery";
   }
 }
 </style>
-
-<script>
-//首页logo效果
-var IndexLogo = function () {
-  var index = 0;
-  setInterval(function () {
-    index = Math.round(Math.random() * 12);
-    $(".index_logo_list").removeClass("active");
-    $(".index_logo_list").eq(index).addClass("active");
-  }, 4000);
-};
-IndexLogo();
-
-// $(window).on('scroll',function (){
-//   const scrollY = $(window).scrollTop();
-//   const maxAngle = 5;
-//   const angle = Math.min(scrollY / 100, maxAngle);
-
-//   $('#leftCol').css('transform', 'rotateY(-' + angle + 'deg)');
-//   $('#rightCol').css('transform', 'rotateY(' + angle + 'deg)');
-
-// });
-
-//   $(window).on('scroll',function (){
-//   const boxes = document.querySelectorAll('#leftCol li');
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add('tilted');
-//     }
-//   });
-// }, {
-//   threshold: 0.5
-// });
-
-// boxes.forEach((box, index) => {
-//   observer.observe(box);
-//   // 增加 delay 感觉
-//   box.style.transitionDelay = `${index * 0.2}s`;
-// });
-
-// });
-</script>
