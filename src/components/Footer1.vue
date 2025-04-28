@@ -3,6 +3,7 @@
   <div class="footer">
     <div class="logo">
       <img src="@/assets/img1/logo1.png" class="img2" />
+      <span>Tel：18801151621</span>
     </div>
     <div class="menu">
       <ul>
@@ -51,7 +52,6 @@
           <a href="##"><p>工艺仿真与优化软件</p></a>
           <a href="##"><p>资质安全预警软件</p></a>
           <a href="##"><p>寿命估计与预测软件</p></a>
-          <a href="##"><p>寿命估计与预测软件</p></a>
         </li>
       </ul>
       <ul>
@@ -77,7 +77,7 @@
     </div>
     <div class="bott">
       <div class="line">
-        <a href="##">联系我们</a> <span>Tel：18801151621</span>
+        <a href="##">联系我们</a>
       </div>
       <div class="sild">
         <p>
@@ -96,8 +96,13 @@
   .logo {
     border-bottom: 1px solid #bcbcbc;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
     .img2 {
       height: 24px;
+    }
+    span {
+      font-size: 16px;
     }
   }
   .menu {
@@ -114,6 +119,12 @@
           height: 25px;
           margin: 0;
         }
+        p {
+          font-size: 14px;
+          &:hover {
+            color: #3c72f2;
+          }
+        }
         p.first {
           margin-top: 30px;
         }
@@ -125,6 +136,9 @@
       border-bottom: 1px solid #bcbcbc;
       padding-bottom: 20px;
       margin-bottom: 20px;
+      a {
+        font-size: 14px;
+      }
       span {
         margin-left: 50px;
       }
@@ -132,6 +146,14 @@
     .sild {
       display: flex;
       justify-content: space-between;
+      p {
+        font-size: 14px;
+      }
+      span {
+        font-size: 16px;
+        color: #3c72f2;
+        font-weight: 600;
+      }
     }
   }
 }
