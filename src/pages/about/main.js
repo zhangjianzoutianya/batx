@@ -6,7 +6,7 @@ import Api from "../../api/api.js";
 import { createPinia } from "pinia";
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 
-console.log("bbbbbb");
+console.log("aaaaaaa");
 const app = createApp(App);
 const pinia = createPinia();
 pinia.use(piniaPluginPersistedstate);

@@ -30,11 +30,11 @@ const handleScroll = () => {
   } else if (scrollY >= sectionTop && scrollY <= sectionTop + maxScroll) {
     const progress = (scrollY - sectionTop) / maxScroll;
     translateX.value = progress * totalScrollLength;
-    translateY.value = -(progress * totalScrollLength) / 14;
+    translateY.value = -(progress * totalScrollLength) / 13;
   } else {
     // 当滚动超过section底部时，保持最大translateX值
     translateX.value = totalScrollLength;
-    translateY.value = -totalScrollLength / 14;
+    translateY.value = -totalScrollLength / 13;
   }
 };
 
@@ -135,8 +135,8 @@ onBeforeUnmount(() => {
             <img src="@/assets/img1/solu2.jpg" />
           </div>
           <div class="text">
-            <h5>系统产品开发</h5>
-            <p>System Product R&D</p>
+            <h5>大数据AI平台</h5>
+            <p>Big Data AI Platform</p>
           </div>
         </div>
         <div class="solu_box solu_box3">
@@ -145,8 +145,8 @@ onBeforeUnmount(() => {
             <img src="@/assets/img1/solu3.jpg" />
           </div>
           <div class="text">
-            <h5>系统产品开发</h5>
-            <p>System Product R&D</p>
+            <h5>产线智能制造</h5>
+            <p>Product Manufacture</p>
           </div>
         </div>
         <div class="solu_box solu_box4">
@@ -155,8 +155,8 @@ onBeforeUnmount(() => {
             <img src="@/assets/img1/solu4.jpg" />
           </div>
           <div class="text">
-            <h5>系统产品开发</h5>
-            <p>System Product R&D</p>
+            <h5>资产检测评估</h5>
+            <p>Assessment & Test</p>
           </div>
         </div>
       </div>
@@ -606,10 +606,10 @@ onBeforeUnmount(() => {
     .index_service_list {
       display: flex;
       flex-wrap: wrap;
-      width: 220vw;
+      width: 213vw;
       transition: transform 0.3s ease-out;
       .item {
-        width: 25vw;
+        width: 24vw;
         flex-shrink: 0;
         font-weight: bold;
         display: flex;
@@ -626,7 +626,7 @@ onBeforeUnmount(() => {
           padding-top: 10px;
           p {
             color: #000;
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 400;
             img {
               width: 16px;

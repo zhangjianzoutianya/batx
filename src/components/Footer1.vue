@@ -1,4 +1,11 @@
-<script setup></script>
+<script setup>
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // 平滑滚动
+  });
+};
+</script>
 <template>
   <div class="footer">
     <div class="logo">
@@ -52,13 +59,13 @@
           <a href="##"><p>工艺仿真与优化软件</p></a>
           <a href="##"><p>资质安全预警软件</p></a>
           <a href="##"><p>寿命估计与预测软件</p></a>
+          <a href="##"><p>析理预警与检测软件</p></a>
         </li>
       </ul>
       <ul>
         <li>
           <a href="##"><h5></h5></a>
-          <a href="##"><p class="first">析理预警与检测软件</p></a>
-          <a href="##"><p>系统快充策略开发软件</p></a>
+          <a href="##"><p class="first">系统快充策略开发软件</p></a>
           <a href="##"><p>系统不一致性估计</p></a>
           <a href="##"><p>智能补电与均衡仪</p></a>
           <a href="##"><p>电池资质检测评估报告</p></a>
@@ -76,15 +83,13 @@
       </ul>
     </div>
     <div class="bott">
-      <div class="line">
-        <a href="##">联系我们</a>
-      </div>
+      <div class="line"></div>
       <div class="sild">
         <p>
           Privacy Terms of Use Legal & Compliance Copyright © 2004-2025 . All
           rights reserved,
         </p>
-        <span>Back to </span>
+        <span @click="scrollToTop">Back to </span>
       </div>
     </div>
   </div>
@@ -102,7 +107,8 @@
       height: 24px;
     }
     span {
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: 600;
     }
   }
   .menu {
@@ -120,7 +126,7 @@
           margin: 0;
         }
         p {
-          font-size: 14px;
+          font-size: 15px;
           &:hover {
             color: #3c72f2;
           }
@@ -153,6 +159,7 @@
         font-size: 16px;
         color: #3c72f2;
         font-weight: 600;
+        cursor: pointer;
       }
     }
   }
