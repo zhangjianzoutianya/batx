@@ -17,7 +17,9 @@ console.log(id.value);
     <div :class="{ team: true, team_4: id == 4 }" v-if="id == 4">团队成员4</div>
     <div :class="{ team: true, team_5: id == 5 }" v-if="id == 5">团队成员5</div>
     <div :class="{ team: true, team_6: id == 6 }" v-if="id == 6">团队成员6</div>
-    <div :class="{ team: true, team_7: id == 7 }" v-if="id == 7">团队成员7</div>
+    <div :class="{ team: true, team_7: id == 7 }" v-if="id == 7">
+      团队成员7777
+    </div>
     <Footer2 />
   </div>
 </template>
