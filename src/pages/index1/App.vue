@@ -211,7 +211,7 @@ onBeforeUnmount(() => {
               <p>资产安全预警软件 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
-          <div class="item">
+          <!-- <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod9.jpg" />
             </div>
@@ -226,7 +226,7 @@ onBeforeUnmount(() => {
             <div class="text">
               <p>智能补电与均衡仪 <img src="@/assets/img1/jtop.png" /></p>
             </div>
-          </div>
+          </div> -->
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod4.jpg" />
@@ -267,7 +267,7 @@ onBeforeUnmount(() => {
               <p>系统快充策略开发软件 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
-          <div class="item">
+          <!-- <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod12.jpg" />
             </div>
@@ -282,7 +282,7 @@ onBeforeUnmount(() => {
             <div class="text">
               <p>电池资产检测评估报告 <img src="@/assets/img1/jtop.png" /></p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const scrollToTop = () => {
 <template>
   <div class="footer">
     <div class="logo">
-      <img src="@/assets/img1/logo1.png" class="img2" />
+      <img src="@/assets/img1/logo_foot.png" class="img2" />
     </div>
     <div class="menu">
       <ul>
@@ -92,8 +92,8 @@ const scrollToTop = () => {
         <a href="##">联系我们</a> <span>Tel：18801151621</span>
         <span>Email：yufang.lu@batx.tech</span>
         <div class="p_ico">
-          <img src="@/assets/img1/mail.png" style="margin-right: 10px" />
-          <img src="@/assets/img1/phone.png" />
+          <img src="@/assets/img1/mail2.png" style="margin-right: 10px" />
+          <img src="@/assets/img1/phone2.png" />
         </div>
       </div>
       <div class="line"></div>
@@ -111,8 +111,9 @@ const scrollToTop = () => {
 <style scoped lang="less">
 .footer {
   padding: 6% 4% 1% 4%;
+  background-color: #000000;
   .logo {
-    border-bottom: 1px solid #bcbcbc;
+    border-bottom: 1px solid #adadad;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -132,7 +133,7 @@ const scrollToTop = () => {
     ul {
       li {
         h5 {
-          color: #656565;
+          color: #adadad;
           font-size: 20px;
           font-weight: 500;
           height: 25px;
@@ -140,6 +141,7 @@ const scrollToTop = () => {
         }
         p {
           font-size: 15px;
+          color: #adadad;
           &:hover {
             color: #3c72f2;
           }
@@ -159,9 +161,11 @@ const scrollToTop = () => {
       padding: 0 8%;
       a {
         margin-right: 40px;
+        color: #adadad;
       }
       span {
         margin-right: 15px;
+        color: #adadad;
       }
       .p_ico {
         position: absolute;
@@ -170,26 +174,28 @@ const scrollToTop = () => {
       }
     }
     .line {
-      border-bottom: 1px solid #bcbcbc;
+      border-bottom: 1px solid #adadad;
       padding-bottom: 10px;
       margin-bottom: 20px;
       a {
         font-size: 14px;
+        color: #adadad;
       }
       span {
         margin-left: 50px;
+        color: #adadad;
       }
     }
     .sild {
       display: flex;
-      justify-content: space-between;
       padding: 0 8%;
       p {
         font-size: 14px;
+        color: #adadad;
       }
       span {
         font-size: 16px;
-        color: #656565;
+        color: #adadad;
         font-weight: 600;
         cursor: pointer;
       }

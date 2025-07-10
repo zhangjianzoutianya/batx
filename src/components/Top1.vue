@@ -10,22 +10,22 @@ import $ from "jquery";
     </div>
     <div class="nav">
       <a href="##">
-        <span>核心技术</span>
+        <span>技术平台</span>
       </a>
       <a href="##">
         <span>解决方案</span>
       </a>
       <a href="##">
-        <span>产品&服务</span>
+        <span>产品服务</span>
       </a>
       <a href="##">
-        <span>公司</span>
+        <span>BATX平台</span>
       </a>
       <a href="##">
-        <span>新闻</span>
+        <span>咨询中心</span>
       </a>
       <a href="##">
-        <span>联络</span>
+        <span>关于我们</span>
       </a>
       <a href="##">
         <span><i>CN</i>/<i>EN</i></span>
