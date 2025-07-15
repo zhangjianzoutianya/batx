@@ -18,21 +18,21 @@ import $ from "jquery";
               <p>
                 10余年的电池机理专业知识沉淀<br />贯穿本征安全、主动安全、被动安全
               </p>
-              <img src="@/assets/img1/so_ico1.png" />
+              <img src="@/assets/img1/so_ico1.png" width="69px" />
             </div>
             <div class="banner_txt_box_item item2">
               <h5>最会仿真</h5>
               <p>
                 从第一性原理出发，模型驱动数据应<br />用于电池全生命周期各场景
               </p>
-              <img src="@/assets/img1/so_ico2.png" />
+              <img src="@/assets/img1/so_ico2.png" width="69px" />
             </div>
             <div class="banner_txt_box_item item3">
               <h5>最擅服务</h5>
               <p>
                 安全、高效、专业、全面<br />相关模型/软件用于几乎所有电池企业
               </p>
-              <img src="@/assets/img1/so_ico3.png" />
+              <img src="@/assets/img1/so_ico3.png" width="69px" />
             </div>
           </div>
         </div>
@@ -90,7 +90,6 @@ import $ from "jquery";
         display: flex;
         justify-content: space-between;
         gap: 15px;
-        padding: 20px;
         .item1 {
           flex: 0 0 40%;
         }
@@ -149,6 +148,7 @@ import $ from "jquery";
     }
     img {
       margin: 100px 0;
+      width: 44%;
     }
   }
   .solution_three {

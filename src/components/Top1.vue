@@ -1,5 +1,11 @@
 <script setup>
 import $ from "jquery";
+import { ref } from "vue";
+const activeMenu = ref("");
+
+function hoverMenu(menu) {
+  activeMenu.value = menu;
+}
 </script>
 
 <template>
@@ -12,7 +18,7 @@ import $ from "jquery";
       <a href="##">
         <span>技术平台</span>
       </a>
-      <a href="##">
+      <a href="solution.html">
         <span>解决方案</span>
       </a>
       <a href="##">
@@ -24,7 +30,7 @@ import $ from "jquery";
       <a href="##">
         <span>咨询中心</span>
       </a>
-      <a href="##">
+      <a href="about.html">
         <span>关于我们</span>
       </a>
       <a href="##">

@@ -9,27 +9,47 @@ import $ from "jquery";
       <img src="@/assets/img1/logo1.png" class="img2" />
     </div>
     <div class="nav">
-      <a href="##">
-        <span>核心技术</span>
-      </a>
-      <a href="##">
-        <span>解决方案</span>
-      </a>
-      <a href="##">
-        <span>产品&服务</span>
-      </a>
-      <a href="##">
-        <span>公司</span>
-      </a>
-      <a href="##">
-        <span>新闻</span>
-      </a>
-      <a href="##">
-        <span>联络</span>
-      </a>
-      <a href="##">
-        <span><i>CN</i>/<i>EN</i></span>
-      </a>
+      <div class="nav_menu">
+        <a href="##">
+          <span>核心技术</span>
+        </a>
+      </div>
+      <div class="nav_menu hasNav">
+        <a href="##">
+          <span>解决方案</span>
+        </a>
+        <div class="submenu">
+          <a href="##">系统产品开发</a>
+          <a href="##">产线智能制造</a>
+          <a href="##">能源管理运维</a>
+          <a href="##">资产检测维修</a>
+        </div>
+      </div>
+      <div class="nav_menu hasNav">
+        <a href="##">
+          <span>产品服务</span>
+        </a>
+      </div>
+      <div class="nav_menu">
+        <a href="##">
+          <span>BATX平台</span>
+        </a>
+      </div>
+      <div class="nav_menu">
+        <a href="##">
+          <span>咨询中心</span>
+        </a>
+      </div>
+      <div class="nav_menu">
+        <a href="##">
+          <span>关于我们</span>
+        </a>
+      </div>
+      <div class="nav_menu">
+        <a href="##">
+          <span><i>CN</i>/<i>EN</i></span>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -90,6 +110,18 @@ import $ from "jquery";
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     display: flex;
+    .nav_menu {
+      position: relative;
+
+      .submenu {
+        position: fixed;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+      }
+    }
     a {
       span {
         color: #fff;
