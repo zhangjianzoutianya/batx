@@ -157,7 +157,7 @@ const images4 = [
 //资产检测维修
 </script>
 <template>
-  <div>
+  <div class="solutionDetails">
     <TopPages />
     <div
       :class="{ solutionDetails: true, solutionDetails_1: id == 1 }"

@@ -1,10 +1,28 @@
 <script setup>
 import $ from "jquery";
+import { onMounted } from "vue";
+
+const goHome = () => {
+  window.location.href = "index.html";
+};
+
+onMounted(() => {
+  $(".hasNav")
+    .on("mouseenter", function () {
+      const index = $(this).data("index");
+      $(".submenu-item").fadeOut(0);
+      $(".submenu-item")
+        .eq(index - 1)
+        .fadeIn(300);
+      $(".submenu").slideDown(300);
+    })
+    .on("mouseleave", function () {});
+});
 </script>
 
 <template>
   <div class="loginTop active">
-    <div class="logo">
+    <div class="logo" @click="goHome">
       <img src="@/assets/img1/logo2.png" class="img1" />
       <img src="@/assets/img1/logo1.png" class="img2" />
     </div>
@@ -14,24 +32,18 @@ import $ from "jquery";
           <span>核心技术</span>
         </a>
       </div>
-      <div class="nav_menu hasNav">
-        <a href="##">
+      <div class="nav_menu hasNav" data-index="1">
+        <a href="solution.html">
           <span>解决方案</span>
         </a>
-        <div class="submenu">
-          <a href="##">系统产品开发</a>
-          <a href="##">产线智能制造</a>
-          <a href="##">能源管理运维</a>
-          <a href="##">资产检测维修</a>
-        </div>
       </div>
-      <div class="nav_menu hasNav">
-        <a href="##">
+      <div class="nav_menu hasNav" data-index="2">
+        <a href="productService.html?id=1">
           <span>产品服务</span>
         </a>
       </div>
       <div class="nav_menu">
-        <a href="##">
+        <a href="http://101.132.147.52:12392/storage">
           <span>BATX平台</span>
         </a>
       </div>
@@ -41,7 +53,7 @@ import $ from "jquery";
         </a>
       </div>
       <div class="nav_menu">
-        <a href="##">
+        <a href="about.html">
           <span>关于我们</span>
         </a>
       </div>
@@ -49,6 +61,23 @@ import $ from "jquery";
         <a href="##">
           <span><i>CN</i>/<i>EN</i></span>
         </a>
+      </div>
+    </div>
+    <div class="submenu">
+      <div class="submenu-item">
+        <p>
+          <a href="solutionDetails.html?id=1">系统产品开发</a>
+          <a href="solutionDetails.html?id=2">产线智能制造</a>
+          <a href="solutionDetails.html?id=3">能源管理运维</a>
+          <a href="solutionDetails.html?id=4">资产检测维修</a>
+        </p>
+      </div>
+      <div class="submenu-item">
+        <p>
+          <a href="productService.html?id=2">热相关</a>
+          <a href="productService.html?id=3">电相关 </a>
+          <a href="productService.html?id=4">AI相关</a>
+        </p>
       </div>
     </div>
   </div>
@@ -111,48 +140,80 @@ import $ from "jquery";
     transform: translateY(-50%);
     display: flex;
     .nav_menu {
-      position: relative;
-
-      .submenu {
-        position: fixed;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-      }
-    }
-    a {
-      span {
-        color: #fff;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 0 20px;
-        height: 35px;
-        line-height: 35px;
-        display: inline-block;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      a {
+        span {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 0 20px;
+          height: 35px;
+          line-height: 35px;
+          display: inline-block;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
       }
       &:last-child {
         margin-left: 40px;
-        span {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          i {
-            font-size: 14px;
-            font-weight: 500;
-            font-style: normal;
-            margin: 0 4px;
-            color: #fff;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-            &:hover {
-              color: #2660e8;
+        a {
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              font-size: 14px;
+              font-weight: 500;
+              font-style: normal;
+              margin: 0 4px;
+              color: #212121;
+              transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+              -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+              cursor: pointer;
+              &:hover {
+                color: #2660e8;
+              }
             }
           }
+        }
+      }
+    }
+  }
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    border-top: 1px solid #e0e0df;
+    display: none;
+    .submenu-item {
+      display: none;
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0px;
+        a {
+          color: #a3a3a3;
+          font-size: 14px;
+          line-height: 50px;
+          padding: 0 20px;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          &:hover {
+            color: #2660e8;
+          }
+        }
+      }
+      &:first-child {
+        p {
+          padding-left: 61%;
+        }
+      }
+      &:last-child {
+        p {
+          padding-left: 66.6%;
         }
       }
     }

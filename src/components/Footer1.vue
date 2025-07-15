@@ -5,10 +5,14 @@ const scrollToTop = () => {
     behavior: "smooth", // 平滑滚动
   });
 };
+
+const goHome = () => {
+  window.location.href = "index.html";
+};
 </script>
 <template>
   <div class="footer">
-    <div class="logo">
+    <div class="logo" @click="goHome">
       <img src="@/assets/img1/logo1.png" class="img2" />
     </div>
     <div class="menu">
@@ -33,44 +37,46 @@ const scrollToTop = () => {
       </ul>
       <ul>
         <li>
-          <a href="##"><h5>解决方案</h5></a>
-          <a href="##"><p class="first">系统产品开发</p></a>
-          <a href="##"><p>产线智能制造</p></a>
-          <a href="##"><p>大数据AI平台</p></a>
-          <a href="##"><p>资产检测评估</p></a>
+          <a href="solution.html"><h5>解决方案</h5></a>
+          <a href="solutionDetails.html?id=1"
+            ><p class="first">系统产品开发</p></a
+          >
+          <a href="solutionDetails.html?id=2"><p>产线智能制造</p></a>
+          <a href="solutionDetails.html?id=3"><p>大数据AI平台</p></a>
+          <a href="solutionDetails.html?id=4"><p>资产检测评估</p></a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="##"><h5>产品服务</h5></a>
-          <a href="##"><p class="two">热相关</p></a>
-          <a href="##"><p>热失控机理</p></a>
-          <a href="##"><p>热蔓延仿真</p></a>
-          <a href="##"><p>热管理设计</p></a>
-          <a href="##"><p>热安全预警</p></a>
+          <a href="productService.html?id=1"><h5>产品服务</h5></a>
+          <a href="productService.html?id=1"><p class="two">热相关</p></a>
+          <a href="productService.html?id=1"><p>热失控机理</p></a>
+          <a href="productService.html?id=1"><p>热蔓延仿真</p></a>
+          <a href="productService.html?id=1"><p>热管理设计</p></a>
+          <a href="productService.html?id=1"><p>热安全预警</p></a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="##"><h5></h5></a>
-          <a href="##"><p class="two">电相关</p></a>
-          <a href="##"><p>性能仿真</p></a>
-          <a href="##"><p>状态估计</p></a>
-          <a href="##"><p>快充控制</p></a>
-          <a href="##"><p>寿命预测</p></a>
+          <a href="productService.html?id=2"><h5></h5></a>
+          <a href="productService.html?id=2"><p class="two">电相关</p></a>
+          <a href="productService.html?id=2"><p>性能仿真</p></a>
+          <a href="productService.html?id=2"><p>状态估计</p></a>
+          <a href="productService.html?id=2"><p>快充控制</p></a>
+          <a href="productService.html?id=2"><p>寿命预测</p></a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="##"><h5></h5></a>
-          <a href="##"><p class="two">AI相关</p></a>
-          <a href="##"><p>AI管理大模型</p></a>
-          <a href="##"><p>AI制造大模型</p></a>
+          <a href="productService.html?id=3"><h5></h5></a>
+          <a href="productService.html?id=3"><p class="two">AI相关</p></a>
+          <a href="productService.html?id=3"><p>AI管理大模型</p></a>
+          <a href="productService.html?id=3"><p>AI制造大模型</p></a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="##"><h5>BATX平台</h5></a>
+          <a href="http://101.132.147.52:12392/storage"><h5>BATX平台</h5></a>
         </li>
       </ul>
       <ul>
@@ -80,10 +86,10 @@ const scrollToTop = () => {
       </ul>
       <ul>
         <li>
-          <a href="##"><h5>关于我们</h5></a>
-          <a href="##"><p class="first">团队优势</p></a>
-          <a href="##"><p>发展历程</p></a>
-          <a href="##"><p>荣誉资质</p></a>
+          <a href="about.html"><h5>关于我们</h5></a>
+          <a href="about.html"><p class="first">团队优势</p></a>
+          <a href="about.html"><p>发展历程</p></a>
+          <a href="about.html"><p>荣誉资质</p></a>
         </li>
       </ul>
     </div>

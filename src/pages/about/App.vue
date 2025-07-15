@@ -34,7 +34,7 @@ const goToTeam = (id) => {
 };
 </script>
 <template>
-  <div>
+  <div class="about">
     <TopPages />
     <div class="banner">
       <img src="@/assets/img1/banner_about.jpg" width="100%" />

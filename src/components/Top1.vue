@@ -6,11 +6,15 @@ const activeMenu = ref("");
 function hoverMenu(menu) {
   activeMenu.value = menu;
 }
+
+const goHome = () => {
+  window.location.href = "index.html";
+};
 </script>
 
 <template>
   <div class="loginTop">
-    <div class="logo">
+    <div class="logo" @click="goHome">
       <img src="@/assets/img1/logo2.png" class="img1" />
       <img src="@/assets/img1/logo1.png" class="img2" />
     </div>
@@ -21,10 +25,10 @@ function hoverMenu(menu) {
       <a href="solution.html">
         <span>解决方案</span>
       </a>
-      <a href="##">
+      <a href="productService.html?id=1">
         <span>产品服务</span>
       </a>
-      <a href="##">
+      <a href="http://101.132.147.52:12392/storage">
         <span>BATX平台</span>
       </a>
       <a href="##">

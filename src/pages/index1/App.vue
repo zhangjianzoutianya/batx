@@ -211,22 +211,6 @@ onBeforeUnmount(() => {
               <p>资产安全预警软件 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
-          <!-- <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod9.jpg" />
-            </div>
-            <div class="text">
-              <p>寿命估计预测软件 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod13.jpg" />
-            </div>
-            <div class="text">
-              <p>智能补电与均衡仪 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div> -->
           <div class="item">
             <div class="img">
               <img src="@/assets/img1/prod4.jpg" />
@@ -267,22 +251,6 @@ onBeforeUnmount(() => {
               <p>系统快充策略开发软件 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
-          <!-- <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod12.jpg" />
-            </div>
-            <div class="text">
-              <p>系统不一致性估计 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="img">
-              <img src="@/assets/img1/prod14.jpg" />
-            </div>
-            <div class="text">
-              <p>电池资产检测评估报告 <img src="@/assets/img1/jtop.png" /></p>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -606,7 +574,7 @@ onBeforeUnmount(() => {
     .index_service_list {
       display: flex;
       flex-wrap: wrap;
-      width: 213vw;
+      width: 152vw;
       transition: transform 0.3s ease-out;
       .item {
         width: 24vw;
@@ -657,31 +625,19 @@ onBeforeUnmount(() => {
           transform: translateY(13vh);
         }
         &:nth-child(6) {
-          transform: translateY(16vh);
-        }
-        &:nth-child(7) {
-          transform: translateY(19vh);
-        }
-        &:nth-child(8) {
           transform: translateX(6vw) translateY(3vh);
         }
-        &:nth-child(9) {
+        &:nth-child(7) {
           transform: translateX(6vw) translateY(6vh);
         }
-        &:nth-child(10) {
+        &:nth-child(8) {
           transform: translateX(6vw) translateY(9vh);
         }
-        &:nth-child(11) {
+        &:nth-child(9) {
           transform: translateX(6vw) translateY(12vh);
         }
-        &:nth-child(12) {
+        &:nth-child(10) {
           transform: translateX(6vw) translateY(15vh);
-        }
-        &:nth-child(13) {
-          transform: translateX(6vw) translateY(18vh);
-        }
-        &:nth-child(14) {
-          transform: translateX(6vw) translateY(21vh);
         }
       }
     }
