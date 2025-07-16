@@ -17,6 +17,10 @@ onMounted(() => {
       $(".submenu").slideDown(300);
     })
     .on("mouseleave", function () {});
+
+  $(".loginTop").on("mouseleave", function () {
+    $(".submenu").slideUp(300);
+  });
 });
 </script>
 
@@ -28,12 +32,12 @@ onMounted(() => {
     </div>
     <div class="nav">
       <div class="nav_menu">
-        <a href="##">
-          <span>核心技术</span>
+        <a href="solution.html">
+          <span>技术平台</span>
         </a>
       </div>
       <div class="nav_menu hasNav" data-index="1">
-        <a href="solution.html">
+        <a href="solutionDetails.html?id=1">
           <span>解决方案</span>
         </a>
       </div>
@@ -74,9 +78,9 @@ onMounted(() => {
       </div>
       <div class="submenu-item">
         <p>
-          <a href="productService.html?id=2">热相关</a>
-          <a href="productService.html?id=3">电相关 </a>
-          <a href="productService.html?id=4">AI相关</a>
+          <a href="productService.html?id=1">热相关</a>
+          <a href="productService.html?id=2">电相关 </a>
+          <a href="productService.html?id=3">AI相关</a>
         </p>
       </div>
     </div>

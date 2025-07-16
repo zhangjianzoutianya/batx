@@ -18,26 +18,26 @@ const goHome = () => {
     <div class="menu">
       <ul>
         <li>
-          <a href="##"><h5>技术平台</h5></a>
-          <a href="##"><p class="first">机理模型</p></a>
-          <a href="##"><p>本征安全</p></a>
-          <a href="##"><p>主动安全</p></a>
-          <a href="##"><p>被动安全</p></a>
+          <a href="solution.html"><h5>技术平台</h5></a>
+          <a href="solution.html"><p class="first">机理模型</p></a>
+          <a href="solution.html"><p>本征安全</p></a>
+          <a href="solution.html"><p>主动安全</p></a>
+          <a href="solution.html"><p>被动安全</p></a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="##"><h5></h5></a>
-          <a href="##"><p class="first">AI模型</p></a>
-          <a href="##"><p>状态估计</p></a>
-          <a href="##"><p>故障诊断</p></a>
-          <a href="##"><p>安全预警</p></a>
-          <a href="##"><p>寿命预测</p></a>
+          <a href="solution.html"><h5></h5></a>
+          <a href="solution.html"><p class="first">AI模型</p></a>
+          <a href="solution.html"><p>状态估计</p></a>
+          <a href="solution.html"><p>故障诊断</p></a>
+          <a href="solution.html"><p>安全预警</p></a>
+          <a href="solution.html"><p>寿命预测</p></a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="solution.html"><h5>解决方案</h5></a>
+          <a href="solutionDetails.html?id=1"><h5>解决方案</h5></a>
           <a href="solutionDetails.html?id=1"
             ><p class="first">系统产品开发</p></a
           >
@@ -81,7 +81,7 @@ const goHome = () => {
       </ul>
       <ul>
         <li>
-          <a href="##"><h5>咨询中心</h5></a>
+          <a href="##"><h5>资讯中心</h5></a>
         </li>
       </ul>
       <ul>

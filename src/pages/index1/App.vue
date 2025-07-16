@@ -60,12 +60,12 @@ onBeforeUnmount(() => {
         <div class="banner_bg"></div>
         <div class="banner_txt">
           <h5>
-            电池全生命周期智
+            电池全生命周期智能化
             <br />
-            能化服务商
+            服务商
           </h5>
           <p>
-            Battery life cycle Intelligent
+            Battery life cycle digital and Intelligent
             <br />
             service provider
           </p>
@@ -73,18 +73,17 @@ onBeforeUnmount(() => {
       </div>
     </div>
     <div class="index_pro">
-      <h5>核心技术</h5>
+      <h5>技术平台</h5>
       <div class="index_pro_box">
         <div class="item item1">
           <div class="txt"></div>
           <div class="writ">
-            <h5>解决多个任务</h5>
+            <h5>机理模型</h5>
             <p>PM 4 Battery</p>
           </div>
           <div class="writ_bot">
             <p>
-              <span>研发制造</span><span>智能管理</span><span>检测运维</span
-              ><span>寿命预测</span>
+              <span>本征安全</span><span>主动安全</span><span>被动安全</span>
             </p>
           </div>
           <div class="icon_png">
@@ -97,13 +96,13 @@ onBeforeUnmount(() => {
         <div class="item item2">
           <div class="txt"></div>
           <div class="writ">
-            <h5>适用多种场景</h5>
+            <h5>AI模型</h5>
             <p>AI 4 Battery</p>
           </div>
           <div class="writ_bot">
             <p>
-              <span>固态电池</span><span>电动汽车</span><span>储能电池</span
-              ><span>光伏电池</span>
+              <span>状态估计</span><span>故障诊断</span><span>安全预警</span
+              ><span>寿命预测</span>
             </p>
           </div>
           <div class="icon_png">
@@ -135,8 +134,8 @@ onBeforeUnmount(() => {
             <img src="@/assets/img1/solu2.jpg" />
           </div>
           <div class="text">
-            <h5>大数据AI平台</h5>
-            <p>Big Data AI Platform</p>
+            <h5>产线智能制造</h5>
+            <p>Smart Manufacturin</p>
           </div>
         </div>
         <div class="solu_box solu_box3">
@@ -145,8 +144,8 @@ onBeforeUnmount(() => {
             <img src="@/assets/img1/solu3.jpg" />
           </div>
           <div class="text">
-            <h5>产线智能制造</h5>
-            <p>Product Manufacture</p>
+            <h5>能源管理运维</h5>
+            <p>Energy Management & Operation</p>
           </div>
         </div>
         <div class="solu_box solu_box4">
@@ -155,8 +154,8 @@ onBeforeUnmount(() => {
             <img src="@/assets/img1/solu4.jpg" />
           </div>
           <div class="text">
-            <h5>资产检测评估</h5>
-            <p>Assessment & Test</p>
+            <h5>资产检测维修</h5>
+            <p>Asset Inspection & Maintenanc</p>
           </div>
         </div>
       </div>
@@ -184,7 +183,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod2.jpg" />
             </div>
             <div class="text">
-              <p>热蔓延建模仿真 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热安全预警 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -192,7 +191,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod3.jpg" />
             </div>
             <div class="text">
-              <p>热管理系统设计 <img src="@/assets/img1/jtop.png" /></p>
+              <p>性能仿真 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -200,7 +199,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod7.jpg" />
             </div>
             <div class="text">
-              <p>工艺仿真与优化软件 <img src="@/assets/img1/jtop.png" /></p>
+              <p>状态估计 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -208,7 +207,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod8.jpg" />
             </div>
             <div class="text">
-              <p>资产安全预警软件 <img src="@/assets/img1/jtop.png" /></p>
+              <p>AI管理大模型 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -216,7 +215,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod4.jpg" />
             </div>
             <div class="text">
-              <p>电池工况模拟系统 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热蔓延建模仿真 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -224,7 +223,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod5.jpg" />
             </div>
             <div class="text">
-              <p>智能化成与分容设备 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热管理设计 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -232,7 +231,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod6.jpg" />
             </div>
             <div class="text">
-              <p>电池制造产线大数据 <img src="@/assets/img1/jtop.png" /></p>
+              <p>快充控制 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -240,7 +239,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod10.jpg" />
             </div>
             <div class="text">
-              <p>析锂预警与检测软件 <img src="@/assets/img1/jtop.png" /></p>
+              <p>寿命预测 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
           <div class="item">
@@ -248,7 +247,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod11.jpg" />
             </div>
             <div class="text">
-              <p>系统快充策略开发软件 <img src="@/assets/img1/jtop.png" /></p>
+              <p>AI制造大模型 <img src="@/assets/img1/jtop.png" /></p>
             </div>
           </div>
         </div>
