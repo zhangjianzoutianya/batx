@@ -388,7 +388,7 @@ const images4 = [
 
 <style scoped lang="less">
 .solutionDetails {
-  padding-top: 85px;
+  // padding-top: 75px;
   .banner {
     position: relative;
     .text {
