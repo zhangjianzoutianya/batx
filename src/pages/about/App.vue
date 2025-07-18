@@ -42,7 +42,7 @@ const goToTeam = (id) => {
     <div class="about_tema">
       <h2>团队优势</h2>
       <p>
-        核心创始团队均来自欧阳明高院士课题组，长期专注于新能源和AI研究，既具备电池、充电、储能等能源领域的专业知识，又具备大数据、A
+        核心创始团队均来自欧阳明高院士课题组，长期专注于新能源和AI研究，既具备电池、充电、储能等能源<br />领域的专业知识，又具备大数据、AI的基础研发和应用能力。
       </p>
       <div class="team">
         <div class="left" @click="goToTeam(1)">
@@ -189,22 +189,26 @@ const goToTeam = (id) => {
 
     <div class="about_honor">
       <img src="@/assets/img1/about2.jpg" width="100%" />
-      <div class="honor_text">
-        <div class="text_list">
-          <h5>2025年</h5>
-          <p>12th校长杯决赛前十强(第五名)</p>
-        </div>
-        <div class="text_list">
-          <h5>2025年</h5>
-          <p>卢宇芳获清华大学高榕创新创业奖学金</p>
-        </div>
-        <div class="text_list">
-          <h5>2024年</h5>
-          <p>清华三创大赛决赛，新能源种子全球前六名</p>
-        </div>
-        <div class="text_list">
-          <h5>2022年</h5>
-          <p>创始人获福布斯亚洲30U30</p>
+      <div class="qualifi">
+        <h5>荣誉资质</h5>
+        <div class="honr_line"></div>
+        <div class="honor_text">
+          <div class="text_list">
+            <h5>2025年</h5>
+            <p>12th校长杯决赛前十强(第五名)</p>
+          </div>
+          <div class="text_list">
+            <h5>2025年</h5>
+            <p>卢宇芳获清华大学高榕创新创业奖学金</p>
+          </div>
+          <div class="text_list">
+            <h5>2024年</h5>
+            <p>清华三创大赛决赛，新能源种子全球前六名</p>
+          </div>
+          <div class="text_list">
+            <h5>2022年</h5>
+            <p>创始人获福布斯亚洲30U30</p>
+          </div>
         </div>
       </div>
     </div>
@@ -282,6 +286,11 @@ const goToTeam = (id) => {
               p {
                 font-size: 16px;
                 color: #010101;
+              }
+            }
+            .school {
+              img {
+                display: block;
               }
             }
           }
@@ -411,23 +420,37 @@ const goToTeam = (id) => {
 }
 .about_honor {
   position: relative;
-  .honor_text {
+  .qualifi {
     position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 210px;
+    top: 85px;
+    > h5 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #010101;
+      text-align: left;
+    }
+    .honr_line {
+      height: 2px;
+      background-color: #dfd7c2;
+      width: 530px;
+      margin-top: 130px;
+      margin-bottom: 90px;
+    }
+  }
+  .honor_text {
+    padding-left: 130px;
     .text_list {
-      margin: 40px 0;
+      margin-bottom: 30px;
+      text-align: left;
       h5 {
-        color: #fff;
+        color: #010101;
         margin: 0;
-        font-size: 16px;
+        font-size: 18px;
       }
       p {
-        color: #fff;
-        font-size: 16px;
+        color: #010101;
+        font-size: 18px;
       }
     }
   }
