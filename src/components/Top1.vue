@@ -52,7 +52,7 @@ onMounted(() => {
         <span>BATX平台</span>
       </a>
       <a href="##">
-        <span>咨询中心</span>
+        <span>资讯中心</span>
       </a>
       <a href="about.html">
         <span>关于我们</span>

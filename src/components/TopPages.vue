@@ -53,7 +53,7 @@ onMounted(() => {
       </div>
       <div class="nav_menu">
         <a href="##">
-          <span>咨询中心</span>
+          <span>资讯中心</span>
         </a>
       </div>
       <div class="nav_menu">
