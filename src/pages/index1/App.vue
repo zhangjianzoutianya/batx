@@ -175,7 +175,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod1.jpg" />
             </div>
             <div class="text">
-              <p>热失控机理研究 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热失控机理</p>
             </div>
           </div>
           <div class="item">
@@ -183,7 +183,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod2.jpg" />
             </div>
             <div class="text">
-              <p>热安全预警 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热安全预警</p>
             </div>
           </div>
           <div class="item">
@@ -191,7 +191,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod3.jpg" />
             </div>
             <div class="text">
-              <p>性能仿真 <img src="@/assets/img1/jtop.png" /></p>
+              <p>电性能仿真</p>
             </div>
           </div>
           <div class="item">
@@ -199,7 +199,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod7.jpg" />
             </div>
             <div class="text">
-              <p>状态估计 <img src="@/assets/img1/jtop.png" /></p>
+              <p>状态估计</p>
             </div>
           </div>
           <div class="item">
@@ -207,7 +207,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod8.jpg" />
             </div>
             <div class="text">
-              <p>AI管理大模型 <img src="@/assets/img1/jtop.png" /></p>
+              <p>AI电池管理</p>
             </div>
           </div>
           <div class="item">
@@ -215,7 +215,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod4.jpg" />
             </div>
             <div class="text">
-              <p>热蔓延建模仿真 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热蔓延仿真</p>
             </div>
           </div>
           <div class="item">
@@ -223,7 +223,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod5.jpg" />
             </div>
             <div class="text">
-              <p>热管理设计 <img src="@/assets/img1/jtop.png" /></p>
+              <p>热管理设计</p>
             </div>
           </div>
           <div class="item">
@@ -231,7 +231,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod6.jpg" />
             </div>
             <div class="text">
-              <p>快充控制 <img src="@/assets/img1/jtop.png" /></p>
+              <p>充放电控制</p>
             </div>
           </div>
           <div class="item">
@@ -239,7 +239,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod10.jpg" />
             </div>
             <div class="text">
-              <p>寿命预测 <img src="@/assets/img1/jtop.png" /></p>
+              <p>寿命预测</p>
             </div>
           </div>
           <div class="item">
@@ -247,7 +247,7 @@ onBeforeUnmount(() => {
               <img src="@/assets/img1/prod11.jpg" />
             </div>
             <div class="text">
-              <p>AI制造大模型 <img src="@/assets/img1/jtop.png" /></p>
+              <p>AI电池制造</p>
             </div>
           </div>
         </div>
@@ -273,10 +273,26 @@ onBeforeUnmount(() => {
           <img src="@/assets/img1/partner7.png" alt="logo" />
           <img src="@/assets/img1/partner8.png" alt="logo" />
           <img src="@/assets/img1/partner9.png" alt="logo" />
+          <img src="@/assets/img1/partner1.png" alt="logo" />
+          <img src="@/assets/img1/partner2.png" alt="logo" />
+          <img src="@/assets/img1/partner4.png" alt="logo" />
+          <img src="@/assets/img1/partner5.png" alt="logo" />
+          <img src="@/assets/img1/partner6.png" alt="logo" />
+          <img src="@/assets/img1/partner7.png" alt="logo" />
+          <img src="@/assets/img1/partner8.png" alt="logo" />
+          <img src="@/assets/img1/partner9.png" alt="logo" />
         </div>
       </div>
       <div class="marquee marquee-right">
         <div class="marquee-content">
+          <img src="@/assets/img1/partner10.png" alt="logo" />
+          <img src="@/assets/img1/partner11.png" alt="logo" />
+          <img src="@/assets/img1/partner12.png" alt="logo" />
+          <img src="@/assets/img1/partner13.png" alt="logo" />
+          <img src="@/assets/img1/partner14.png" alt="logo" />
+          <img src="@/assets/img1/partner15.png" alt="logo" />
+          <img src="@/assets/img1/partner16.png" alt="logo" />
+          <img src="@/assets/img1/partner17.png" alt="logo" />
           <img src="@/assets/img1/partner10.png" alt="logo" />
           <img src="@/assets/img1/partner11.png" alt="logo" />
           <img src="@/assets/img1/partner12.png" alt="logo" />
@@ -361,6 +377,7 @@ onBeforeUnmount(() => {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    background-color: #ededed;
     aspect-ratio: 716 / 230;
     transform: none;
     transform-origin: 50% 50% 0px;
@@ -376,11 +393,11 @@ onBeforeUnmount(() => {
         left: 40px;
         z-index: 2;
         h5 {
-          color: #fff;
+          color: #070707;
           font-size: 22px;
         }
         p {
-          color: #fff;
+          color: #070707;
           font-size: 16px;
         }
       }
@@ -389,14 +406,11 @@ onBeforeUnmount(() => {
         bottom: 20px;
         left: 40px;
         z-index: 2;
-        opacity: 0;
-        -moz-opacity: 0;
-        -khtml-opacity: 0;
-        -webkit-opacity: 0;
-        filter: alpha(opacity=0);
+        -webkit-transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
+        transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
         p {
           span {
-            color: #fff;
+            color: #070707;
             margin-right: 10px;
             font-size: 16px;
           }
@@ -412,6 +426,8 @@ onBeforeUnmount(() => {
         -khtml-opacity: 0;
         -webkit-opacity: 0;
         filter: alpha(opacity=0);
+        -webkit-transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
+        transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
         img {
           width: 40px;
         }
@@ -422,39 +438,37 @@ onBeforeUnmount(() => {
         position: absolute;
         top: 0;
         left: 0;
-        transition-duration: 0.3s;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        -webkit-transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
+        transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
         background: transparent;
       }
       .img {
         width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img {
-          width: 100%;
+          width: auto;
           height: 100%;
-          transition-duration: 0.3s;
-          transition-property: all;
           object-fit: cover;
           object-position: center;
+          -webkit-transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
+          transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
         }
       }
     }
     .item:hover {
       .txt {
-        background: rgba(0, 22, 56, 0.4);
+        background: rgba(228, 239, 249, 0.85);
       }
       .img {
         img {
-          filter: blur(100px);
+          filter: blur(30px);
         }
       }
       .writ_bot {
-        opacity: 1;
-        -moz-opacity: 1;
-        -khtml-opacity: 1;
-        -webkit-opacity: 1;
-        filter: alpha(opacity=100);
+        bottom: 200px;
       }
       .icon_png {
         opacity: 1;
@@ -488,16 +502,18 @@ onBeforeUnmount(() => {
     gap: 20px;
     transition-duration: 0.3s;
     overflow: hidden;
-    aspect-ratio: 423 / 160;
     .solu_box {
       overflow: hidden;
       position: relative;
+      aspect-ratio: 436 / 560;
       .imgBg {
         position: absolute;
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
+        -webkit-transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
+        transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.3s;
       }
       .img {
         width: 100%;
@@ -513,7 +529,7 @@ onBeforeUnmount(() => {
       }
       .text {
         position: absolute;
-        left: 15px;
+        left: 25px;
         bottom: 30px;
         color: #fff;
         z-index: 2;
@@ -525,28 +541,42 @@ onBeforeUnmount(() => {
           font-size: 20px;
         }
       }
-    }
-    .solu_box:hover {
-      .imgBg {
-        background: rgba(0, 22, 56, 0.4);
-      }
-      .img {
-        img {
-          filter: blur(100px);
+      &:nth-child(1) {
+        .text {
+          color: #070707;
+          p {
+            color: #070707;
+          }
         }
       }
     }
+    .solu_box:hover {
+      .imgBg {
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .text {
+        color: #fff;
+        p {
+          color: #fff;
+        }
+      }
+      // .img {
+      //   img {
+      //     filter: blur(100px);
+      //   }
+      // }
+    }
     &:has(.solu_box1:hover) {
-      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     &:has(.solu_box2:hover) {
-      grid-template-columns: 1fr 2fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     &:has(.solu_box3:hover) {
-      grid-template-columns: 1fr 1fr 2fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     &:has(.solu_box4:hover) {
-      grid-template-columns: 1fr 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }
@@ -585,6 +615,7 @@ onBeforeUnmount(() => {
         margin-right: 5vw;
         position: relative;
         margin-bottom: 80px;
+        cursor: pointer;
         .text {
           width: 100%;
           position: absolute;

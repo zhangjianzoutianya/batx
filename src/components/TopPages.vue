@@ -32,28 +32,33 @@ onMounted(() => {
     </div>
     <div class="nav">
       <div class="nav_menu">
+        <a href="index.html">
+          <span>首页</span>
+        </a>
+      </div>
+      <div class="nav_menu hasNav" data-index="1">
         <a href="solution.html">
           <span>技术平台</span>
         </a>
       </div>
-      <div class="nav_menu hasNav" data-index="1">
+      <div class="nav_menu hasNav" data-index="2">
         <a href="solutionDetails.html?id=1">
           <span>解决方案</span>
         </a>
       </div>
-      <div class="nav_menu hasNav" data-index="2">
+      <div class="nav_menu hasNav" data-index="3">
         <a href="productService.html?id=1">
           <span>产品服务</span>
         </a>
       </div>
       <div class="nav_menu">
-        <a href="http://101.132.147.52:12392/storage">
+        <a href="http://101.132.147.52:12392/real">
           <span>BATX平台</span>
         </a>
       </div>
       <div class="nav_menu">
         <a href="##">
-          <span>资讯中心</span>
+          <span>周期资讯</span>
         </a>
       </div>
       <div class="nav_menu">
@@ -63,11 +68,17 @@ onMounted(() => {
       </div>
       <div class="nav_menu">
         <a href="##">
-          <span><i>CN</i>/<i>EN</i></span>
+          <span><i>中</i>/<i>EN</i></span>
         </a>
       </div>
     </div>
     <div class="submenu">
+      <div class="submenu-item">
+        <p>
+          <a href="solution.html">PM4B</a>
+          <a href="solution.html">AI4B</a>
+        </p>
+      </div>
       <div class="submenu-item">
         <p>
           <a href="solutionDetails.html?id=1">系统产品开发</a>
@@ -78,9 +89,9 @@ onMounted(() => {
       </div>
       <div class="submenu-item">
         <p>
-          <a href="productService.html?id=1">热相关</a>
-          <a href="productService.html?id=2">电相关 </a>
-          <a href="productService.html?id=3">AI相关</a>
+          <a href="productService.html?id=1">热</a>
+          <a href="productService.html?id=2">电</a>
+          <a href="productService.html?id=3">AI</a>
         </p>
       </div>
     </div>
@@ -111,10 +122,10 @@ onMounted(() => {
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .logo {
-    width: 252px;
     position: relative;
+    cursor: pointer;
     img {
-      height: 35px;
+      height: 30px;
       -webkit-transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.9s;
       transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.9s;
     }
@@ -210,14 +221,19 @@ onMounted(() => {
           }
         }
       }
-      &:first-child {
+      &:nth-child(1) {
         p {
-          padding-left: 61%;
+          padding-left: 56.3%;
         }
       }
-      &:last-child {
+      &:nth-child(2) {
         p {
-          padding-left: 66.6%;
+          padding-left: 61.5%;
+        }
+      }
+      &:nth-child(3) {
+        p {
+          padding-left: 67%;
         }
       }
     }

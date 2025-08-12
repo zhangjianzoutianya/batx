@@ -39,29 +39,38 @@ onMounted(() => {
       <img src="@/assets/img1/logo1.png" class="img2" />
     </div>
     <div class="nav">
-      <a href="solution.html">
+      <a href="index.html">
+        <span>首页</span>
+      </a>
+      <a href="solution.html" class="hasNav" data-index="1">
         <span>技术平台</span>
       </a>
-      <a href="solutionDetails.html?id=1" class="hasNav" data-index="1">
+      <a href="solutionDetails.html?id=1" class="hasNav" data-index="2">
         <span>解决方案</span>
       </a>
-      <a href="productService.html?id=1" class="hasNav" data-index="2">
+      <a href="productService.html?id=1" class="hasNav" data-index="3">
         <span>产品服务</span>
       </a>
-      <a href="http://101.132.147.52:12392/storage">
+      <a href="http://101.132.147.52:12392/real">
         <span>BATX平台</span>
       </a>
       <a href="##">
-        <span>资讯中心</span>
+        <span>周期资讯</span>
       </a>
       <a href="about.html">
         <span>关于我们</span>
       </a>
       <a href="##">
-        <span><i>CN</i>/<i>EN</i></span>
+        <span><i>中</i>/<i>EN</i></span>
       </a>
     </div>
     <div class="submenu">
+      <div class="submenu-item">
+        <p>
+          <a href="solution.html">PM4B</a>
+          <a href="solution.html">AI4B</a>
+        </p>
+      </div>
       <div class="submenu-item">
         <p>
           <a href="solutionDetails.html?id=1">系统产品开发</a>
@@ -72,9 +81,9 @@ onMounted(() => {
       </div>
       <div class="submenu-item">
         <p>
-          <a href="productService.html?id=1">热相关</a>
-          <a href="productService.html?id=2">电相关 </a>
-          <a href="productService.html?id=3">AI相关</a>
+          <a href="productService.html?id=1">热</a>
+          <a href="productService.html?id=2">电 </a>
+          <a href="productService.html?id=3">AI</a>
         </p>
       </div>
     </div>
@@ -105,10 +114,10 @@ onMounted(() => {
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .logo {
-    width: 252px;
     position: relative;
+    cursor: pointer;
     img {
-      height: 35px;
+      height: 30px;
       -webkit-transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.9s;
       transition: all cubic-bezier(0.18, 1, 0.21, 1) 0.9s;
     }
@@ -189,7 +198,7 @@ onMounted(() => {
         justify-content: flex-start;
         margin: 0px;
         a {
-          color: #a3a3a3;
+          color: rgba(0, 0, 0, 0.6);
           font-size: 14px;
           line-height: 50px;
           padding: 0 20px;
@@ -200,14 +209,19 @@ onMounted(() => {
           }
         }
       }
-      &:first-child {
+      &:nth-child(1) {
         p {
-          padding-left: 61%;
+          padding-left: 56.3%;
         }
       }
-      &:last-child {
+      &:nth-child(2) {
         p {
-          padding-left: 66.6%;
+          padding-left: 61.5%;
+        }
+      }
+      &:nth-child(3) {
+        p {
+          padding-left: 67%;
         }
       }
     }

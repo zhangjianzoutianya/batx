@@ -14,25 +14,14 @@ const goHome = () => {
   <div class="footer">
     <div class="logo" @click="goHome">
       <img src="@/assets/img1/logo1.png" class="img2" />
+      <span>联系我们 Tel： (+86)15385765708</span>
     </div>
     <div class="menu">
       <ul>
         <li>
           <a href="solution.html"><h5>技术平台</h5></a>
-          <a href="solution.html"><p class="first">机理模型</p></a>
-          <a href="solution.html"><p>本征安全</p></a>
-          <a href="solution.html"><p>主动安全</p></a>
-          <a href="solution.html"><p>被动安全</p></a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="solution.html"><h5></h5></a>
-          <a href="solution.html"><p class="first">AI模型</p></a>
-          <a href="solution.html"><p>状态估计</p></a>
-          <a href="solution.html"><p>故障诊断</p></a>
-          <a href="solution.html"><p>安全预警</p></a>
-          <a href="solution.html"><p>寿命预测</p></a>
+          <a href="solution.html"><p class="first">PM4B</p></a>
+          <a href="solution.html"><p>AI4B</p></a>
         </li>
       </ul>
       <ul>
@@ -76,39 +65,45 @@ const goHome = () => {
       </ul>
       <ul>
         <li>
-          <a href="http://101.132.147.52:12392/storage"><h5>BATX平台</h5></a>
+          <a href="http://101.132.147.52:12392/real"><h5>BATX平台</h5></a>
+          <a href="http://101.132.147.52:12392/real"
+            ><p class="first">实车数据</p></a
+          >
+          <a href="http://101.132.147.52:12392/real"><p>单体数据</p></a>
+          <a href="http://101.132.147.52:12392/real"><p>储能数据</p></a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="##"><h5>资讯中心</h5></a>
+          <a href="##"><h5>周期资讯</h5></a>
         </li>
       </ul>
       <ul>
         <li>
           <a href="about.html"><h5>关于我们</h5></a>
-          <a href="about.html"><p class="first">团队优势</p></a>
+          <a href="about.html"><p class="first">公司概况</p></a>
+          <a href="about.html"><p>团队介绍</p></a>
           <a href="about.html"><p>发展历程</p></a>
           <a href="about.html"><p>荣誉资质</p></a>
+          <a href="about.html"><p>联系我们</p></a>
         </li>
       </ul>
     </div>
     <div class="bott">
       <div class="phone">
-        <a href="##">联系我们</a> <span>Tel：18801151621</span>
-        <span>Email：yufang.lu@batx.tech</span>
         <div class="p_ico">
-          <img src="@/assets/img1/mail.png" style="margin-right: 10px" />
-          <img src="@/assets/img1/phone.png" />
+          <img src="@/assets/img1/foot_icon1.png" />
+          <img src="@/assets/img1/foot_icon2.png" />
+          <img src="@/assets/img1/foot_icon3.png" />
+          <img src="@/assets/img1/foot_icon4.png" />
+          <img src="@/assets/img1/foot_icon5.png" />
+          <img src="@/assets/img1/foot_icon6.png" />
         </div>
       </div>
       <div class="line"></div>
       <div class="sild">
-        <p>
-          Privacy Terms of Use Legal & Compliance Copyright © 2004-2025 . All
-          rights reserved,
-        </p>
-        <span @click="scrollToTop">Back to ></span>
+        <p>Privacy Terms of Use Legal & Compliance</p>
+        <span @click="scrollToTop">Back to Top</span>
       </div>
     </div>
   </div>
@@ -122,6 +117,7 @@ const goHome = () => {
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    padding-right: 8%;
     .img2 {
       height: 24px;
     }
@@ -173,6 +169,10 @@ const goHome = () => {
         position: absolute;
         bottom: 0;
         right: 8%;
+        img {
+          height: 24px;
+          margin-left: 10px;
+        }
       }
     }
     .line {

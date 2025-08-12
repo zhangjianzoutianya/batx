@@ -91,11 +91,11 @@ import $ from "jquery";
         justify-content: space-between;
         gap: 15px;
         .item1 {
-          flex: 0 0 40%;
+          flex: 0 0 33.33%;
         }
         .item2,
         .item3 {
-          flex: 0 0 30%;
+          flex: 0 0 33.33%;
         }
         .banner_txt_box_item {
           background: #fff;
