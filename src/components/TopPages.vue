@@ -57,7 +57,7 @@ onMounted(() => {
         </a>
       </div>
       <div class="nav_menu">
-        <a href="##">
+        <a href="news.html">
           <span>周期资讯</span>
         </a>
       </div>

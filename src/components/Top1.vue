@@ -54,7 +54,7 @@ onMounted(() => {
       <a href="http://101.132.147.52:12392/real">
         <span>BATX平台</span>
       </a>
-      <a href="##">
+      <a href="news.html">
         <span>周期资讯</span>
       </a>
       <a href="about.html">

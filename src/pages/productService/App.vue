@@ -14,8 +14,8 @@ const id = ref(params.get("id"));
             <img src="@/assets/img1/banner_prod1.jpg" width="100%" />
             <div class="text">
               <p>
-                产线智能制造 <br />
-                守护每一颗“芯”
+                您的电池安全专家 <br />
+                本征安全、主动安全、被动安全
               </p>
             </div>
           </div>
@@ -68,7 +68,7 @@ const id = ref(params.get("id"));
               </div>
             </div>
           </div>
-          <div class="security_four">
+          <!-- <div class="security_four">
             <div class="title">
               <h5>安全预警辅助素材</h5>
               <p>安全是电池资产要坚守的底线，安全预警一直是行业难题。</p>
@@ -80,7 +80,7 @@ const id = ref(params.get("id"));
               <h5>机理-模型-数据三位一体的电池主动安全管理体系</h5>
               <img src="@/assets/img1/hot6.png" width="100%" />
             </div>
-          </div>
+          </div> -->
           <div class="security_five">
             <div class="earlyLeft">
               <h5>热安全预警</h5>
@@ -88,7 +88,7 @@ const id = ref(params.get("id"));
               <p>
                 我们从第一性原理出发，进行缺陷电池数字孪生模拟，整理电池失效数据库，热电耦合失效机理模型结合AI模型，融合核心算法，提升检出率，降低误报率，增加提前预警时间，预警准确率>93%，广泛用于电动汽车和储能领域。
               </p>
-              <span>点击查看</span>
+              <!-- <span>点击查看</span> -->
             </div>
             <div class="earlyRight">
               <img src="@/assets/img1/hot7.png" width="100%" />
@@ -113,7 +113,7 @@ const id = ref(params.get("id"));
               <img src="@/assets/img1/hot9.png" width="100%" />
             </div>
           </div>
-          <div class="security_seven">
+          <!-- <div class="security_seven">
             <div class="assistant">
               <div class="Bigtitle">
                 <h5>热管理辅助素材</h5>
@@ -140,7 +140,7 @@ const id = ref(params.get("id"));
             <div class="material2">
               <img src="@/assets/img1/hot13.png" width="100%" />
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div :class="{ prodSafety: true, prodSafety_2: id == 2 }" v-if="id == 2">
@@ -149,8 +149,8 @@ const id = ref(params.get("id"));
             <img src="@/assets/img1/banner_prod2.jpg" width="100%" />
             <div class="text">
               <p>
-                产线智能制造 <br />
-                守护每一颗“芯”
+                第一性原理、数字孪生建模、联合估计预测 <br />
+                为您的工作降本增效
               </p>
             </div>
           </div>
@@ -159,12 +159,14 @@ const id = ref(params.get("id"));
               <h5>性能仿真</h5>
               <p>
                 我们建立电池单体-模组-系统的电性能仿真平台，提供电池状态估计、充放电控制、副反应检测、结构优化等服务，帮助企业的产品开发提质降本增效。
+              </p>
+              <p>
                 同时，算法结合硬件，可形成BMS hil、Pack
                 hil等解决方案，打通系统产品开发的全流程。
               </p>
             </div>
             <div class="simulation">
-              <h5>仿真建模平台价值</h5>
+              <!-- <h5>仿真建模平台价值</h5> -->
               <div class="platformsAll">
                 <div class="platList">
                   <h5>省时</h5>
@@ -190,28 +192,24 @@ const id = ref(params.get("id"));
               <img src="@/assets/img1/elect1.jpg" width="100%" />
               <div class="formAll">
                 <div class="form_on">
-                  <h5>SOX/DCR估计</h5>
                   <p>SOC估计误差<span><2%</span></p>
                   <p>SOH估计误差<span><3%</span></p>
                   <p>状态联合高精度估计</p>
                   <button>状态估计</button>
                 </div>
                 <div class="form_on">
-                  <h5>充放电控制</h5>
                   <p>比原充电速度提高<span><50+%</span></p>
                   <p>全程充电不析锂不过温</p>
                   <p>老化后模型自适应更新</p>
                   <button>充放电控制</button>
                 </div>
                 <div class="form_on">
-                  <h5>副反应检测</h5>
                   <p>弛豫电压微分定量析锂</p>
                   <p>直流内阻法在线检测</p>
                   <p>SEI膜/LAM等机理分析</p>
                   <button>副反应检测</button>
                 </div>
                 <div class="form_on">
-                  <h5>结构优化</h5>
                   <p>系统结构设计</p>
                   <p>电池不一致性</p>
                   <p>动力与安全性仿真</p>
@@ -230,9 +228,13 @@ const id = ref(params.get("id"));
 
               <p>
                 我们基于等效电路模型/电化学模型及闭环估计算法，完成荷电状态(SOC)、能量状态(SOE)、寿命(SOH)等的联合估计。通过增加力信号、EIS信号等传感，进一步提高估计精度。
-                算法可实现SOC估计误差2%，SOE估计误差
-                4%，SOP估计误差5%，SOH估计误差3%。机理模型+数据模型结合，提供端云一体的智能BMS管理服务。
               </p>
+              <p>
+                算法可实现SOC估计误差2%，SOE估计误差
+                4%，SOP估计误差5%，SOH估计误差3%。
+              </p>
+              <p>机理模型+数据模型结合，提供端云一体的智能BMS管理服务。</p>
+
               <div class="luateALl">
                 <div class="luateOn">
                   <h5><2%</h5>
@@ -306,8 +308,9 @@ const id = ref(params.get("id"));
             <img src="@/assets/img1/banner_prod3.jpg" width="100%" />
             <div class="text">
               <p>
-                产线智能制造 <br />
-                守护每一颗“芯”
+                数据库&知识库、1.2B参数量、全自研架构
+                <br />
+                构建电池AI基座模型
               </p>
             </div>
           </div>
@@ -320,16 +323,19 @@ const id = ref(params.get("id"));
               <h5>寿命估计子模型</h5>
               <div class="sub_mode">
                 <div class="subList">
+                  <h5>场景一</h5>
                   <img src="@/assets/img1/ai_s1.png" width="100%" />
                   <p>数据采集有限</p>
                   <p>硬件计算能力有限</p>
                 </div>
                 <div class="subList">
+                  <h5>场景一</h5>
                   <img src="@/assets/img1/ai_s2.png" width="100%" />
                   <p>数据字段足够</p>
                   <p>依托数据平台</p>
                 </div>
                 <div class="subList">
+                  <h5>场景一</h5>
                   <img src="@/assets/img1/ai_s3.png" width="100%" />
                   <p>丰富的数据字段</p>
                   <p>硬件计算能力无限制</p>
@@ -342,7 +348,7 @@ const id = ref(params.get("id"));
             </div>
             <div class="mod_four">
               <h5>RUL预测子模型</h5>
-              <img src="@/assets/img1/ai_gz1.png" width="100%" />
+              <img src="@/assets/img1/ai_gz2.png" width="100%" />
             </div>
             <div class="mod_five">
               <div class="make">
@@ -352,8 +358,7 @@ const id = ref(params.get("id"));
               <div class="make">
                 <h5>AI制造—智能缺陷检测</h5>
                 <p>
-                  3D线扫+AI驱动，
-                  <br />点云融合特性提取与训练，赋能极片厚度缺陷检测
+                  3D线扫+AI驱动， 点云融合特性提取与训练，赋能极片厚度缺陷检测
                 </p>
                 <img src="@/assets/img1/ai_zn1.png" width="100%" />
               </div>
@@ -361,15 +366,15 @@ const id = ref(params.get("id"));
                 <h5>AI制造—智能缺陷检测</h5>
                 <p>
                   机理模型+数字孪生，
-                  <br />AI赋能电池匀浆、涂布等仿真工艺数据增强，精准极片特性预测。
+                  AI赋能电池匀浆、涂布等仿真工艺数据增强，精准极片特性预测。
                 </p>
                 <img src="@/assets/img1/ai_zn2.png" width="100%" />
               </div>
               <div class="make">
                 <h5>AI制造—智能出厂检测</h5>
-                <p>
+                <!-- <p>
                   先进超声传感+AI数据训练，赋能电池高效量化的出厂检测，提升电池全流程的工艺一致性。
-                </p>
+                </p> -->
                 <img src="@/assets/img1/ai_zn3.png" width="100%" />
               </div>
             </div>
@@ -391,8 +396,12 @@ const id = ref(params.get("id"));
         .text {
           position: absolute;
           left: 10%;
-          top: 50%;
-          transform: translateY(-50%);
+          top: 25%;
+          // transform: translateY(-50%);
+          // -webkit-transform: translateY(-50%);
+          // -moz-transform: translateY(-50%);
+          // -o-transform: translateY(-50%);
+          // -ms-transform: translateY(-50%);
           p {
             font-size: 44px;
             color: #fff;
@@ -410,8 +419,9 @@ const id = ref(params.get("id"));
             margin-bottom: 30px;
           }
           p {
-            font-size: 16px;
+            font-size: 20px;
             color: #010101;
+            font-weight: 400;
           }
         }
       }
@@ -438,9 +448,10 @@ const id = ref(params.get("id"));
             margin-bottom: 30px;
           }
           p {
-            font-size: 16px;
+            font-size: 20px;
             color: #ffffff;
             margin-bottom: 15px;
+            font-weight: 400;
           }
         }
         .img {
@@ -478,7 +489,7 @@ const id = ref(params.get("id"));
             box-shadow: -4px 5px 9px -1px #e0e0e0;
             border-radius: 20px;
             p {
-              font-size: 16px;
+              font-size: 20px;
               color: #010101;
               margin-bottom: 30px;
             }
@@ -518,7 +529,7 @@ const id = ref(params.get("id"));
             margin-bottom: 30px;
           }
           p {
-            font-size: 16px;
+            font-size: 20px;
             color: #010101;
             margin-bottom: 15px;
           }
@@ -534,7 +545,7 @@ const id = ref(params.get("id"));
       }
       .security_five {
         padding: 80px 10% 110px 10%;
-        background-color: #fcfcfc;
+        background-color: #2572fa;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -542,12 +553,13 @@ const id = ref(params.get("id"));
           width: 30%;
           h5 {
             font-size: 36px;
-            color: #010101;
+            color: #ffffff;
             margin-bottom: 30px;
           }
           p {
-            font-size: 16px;
-            color: #010101;
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 400;
           }
           span {
             width: 160px;
@@ -570,9 +582,9 @@ const id = ref(params.get("id"));
         padding: 80px 10% 200px 10%;
         background-color: #fcfcfc;
         .design {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          // display: flex;
+          // justify-content: space-between;
+          // align-items: center;
           .designLeft {
             width: 50%;
             h5 {
@@ -581,12 +593,13 @@ const id = ref(params.get("id"));
               margin-bottom: 30px;
             }
             p {
-              font-size: 16px;
+              font-size: 20px;
               color: #010101;
             }
           }
           .designRight {
-            width: 38%;
+            width: 100%;
+            margin-top: 50px;
           }
         }
         .designImg {
@@ -612,7 +625,7 @@ const id = ref(params.get("id"));
               color: #010101;
             }
             p {
-              font-size: 16px;
+              font-size: 20px;
               color: #010101;
               margin: 30px 0 0 0;
             }
@@ -647,8 +660,9 @@ const id = ref(params.get("id"));
             margin-bottom: 30px;
           }
           p {
-            font-size: 16px;
+            font-size: 20px;
             color: #010101;
+            font-weight: 400;
           }
         }
         .simulation {
@@ -664,18 +678,19 @@ const id = ref(params.get("id"));
             margin-bottom: 50px;
             .platList {
               background-color: #2a57eb;
-              height: 150px;
-              width: 400px;
+              height: 175px;
+              width: 255px;
               border-radius: 15px;
               text-align: center;
-              padding: 15px 0;
+              padding: 20px 0;
               h5 {
                 font-size: 44px;
                 color: #fff;
-                margin-bottom: 10px;
+                font-weight: 400;
+                margin-bottom: 15px;
               }
               p {
-                font-size: 12px;
+                font-size: 15px;
                 color: #fff;
                 margin: 0;
                 line-height: 1.3;
@@ -701,16 +716,20 @@ const id = ref(params.get("id"));
               text-align: center;
               h5 {
                 color: #010101;
-                font-size: 14px;
+                font-size: 20px;
+                font-weight: 400;
                 margin-bottom: 15px;
               }
               p {
-                color: #707070;
+                color: #333333;
                 margin: 0;
-                font-size: 12px;
-                line-height: 1.2;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.8;
                 span {
-                  color: #2a57eb;
+                  color: #333333;
+                  font-size: 20px;
+                  font-weight: 400;
                 }
               }
               button {
@@ -723,7 +742,8 @@ const id = ref(params.get("id"));
                 margin: 0 auto;
                 color: #fff;
                 border: none;
-                font-size: 18px;
+                font-size: 20px;
+                font-weight: 400;
                 margin-top: 35px;
               }
             }
@@ -747,8 +767,9 @@ const id = ref(params.get("id"));
             margin-bottom: 40px;
           }
           p {
-            font-size: 16px;
+            font-size: 20px;
             color: #010101;
+            font-weight: 400;
           }
           .luateALl {
             display: flex;
@@ -768,7 +789,7 @@ const id = ref(params.get("id"));
               }
               p {
                 color: #fff;
-                font-size: 12px;
+                font-size: 15px;
                 margin: 0;
               }
             }
@@ -789,9 +810,11 @@ const id = ref(params.get("id"));
             margin-bottom: 50px;
           }
           p {
-            font-size: 16px;
+            font-size: 20px;
+            font-weight: 400;
             color: #010101;
             margin-bottom: 20px;
+            line-height: 1.8;
           }
           span {
             width: 160px;
@@ -825,10 +848,12 @@ const id = ref(params.get("id"));
             }
           }
           .tit_right {
-            width: 56%;
+            width: 60%;
             p {
-              font-size: 16px;
+              font-size: 20px;
               color: #010101;
+              font-weight: 400;
+              line-height: 1.8;
             }
           }
         }
@@ -844,7 +869,7 @@ const id = ref(params.get("id"));
               background-color: #fff;
             }
             p {
-              font-size: 22px;
+              font-size: 25px;
               text-align: center;
               color: #010101;
             }
@@ -863,7 +888,7 @@ const id = ref(params.get("id"));
         }
         .mod_two {
           background-color: #266cf6;
-          padding: 80px 10%;
+          padding: 100px 10%;
           > h5 {
             font-size: 36px;
             color: #fff;
@@ -875,20 +900,28 @@ const id = ref(params.get("id"));
             align-items: center;
             .subList {
               width: 30%;
+              h5 {
+                color: #fff;
+                font-size: 28px;
+                text-align: center;
+                margin-bottom: 30px;
+                font-weight: 400;
+              }
               img {
                 margin-bottom: 50px;
               }
               p {
                 color: #fff;
-                font-size: 26px;
+                font-size: 28px;
                 margin-bottom: 0;
                 text-align: center;
+                font-weight: 400;
               }
             }
           }
         }
         .mod_three {
-          padding: 80px 10%;
+          padding: 170px 10%;
           background-color: #fcfcfc;
           > h5 {
             font-size: 36px;
@@ -898,7 +931,7 @@ const id = ref(params.get("id"));
         }
         .mod_four {
           background-color: #f4f9ff;
-          padding: 30px 10%;
+          padding: 70px 10% 150px 10%;
           > h5 {
             font-size: 36px;
             color: #010101;
@@ -907,7 +940,7 @@ const id = ref(params.get("id"));
         }
         .mod_five {
           background-color: #fcfcfc;
-          padding: 80px 10%;
+          padding: 100px 10%;
           .make {
             margin-bottom: 90px;
             h5 {
@@ -916,9 +949,12 @@ const id = ref(params.get("id"));
               margin-bottom: 40px;
             }
             p {
-              font-size: 16px;
+              font-size: 20px;
+              font-weight: 400;
               color: #010101;
-              margin-bottom: 80px;
+            }
+            img {
+              margin-top: 80px;
             }
           }
         }

@@ -75,7 +75,7 @@ const goHome = () => {
       </ul>
       <ul>
         <li>
-          <a href="##"><h5>周期资讯</h5></a>
+          <a href="news.html"><h5>周期资讯</h5></a>
         </li>
       </ul>
       <ul>

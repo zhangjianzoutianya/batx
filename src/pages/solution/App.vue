@@ -59,8 +59,7 @@ import $ from "jquery";
       <div class="solution_three">
         <h5>Multi-modal pre-training（多源数据联合预训练）</h5>
         <img src="@/assets/img1/solution3.png" width="100%" />
-        <h5>Fine-tuning（下游任务适配）</h5>
-        <img src="@/assets/img1/solution4.png" width="100%" />
+        <h5>PM4B和AI4B融合，形成BATX技术底座，应用于各种下游场景和任务。</h5>
       </div>
     </div>
 
@@ -126,9 +125,10 @@ import $ from "jquery";
   .solution_one {
     padding: 70px 10% 100px 10%;
     > h5 {
-      font-size: 18px;
+      font-size: 20px;
+      font-weight: 400;
       color: #000;
-      line-height: 24px;
+      line-height: 1.8;
       margin-bottom: 100px;
     }
   }
@@ -143,19 +143,22 @@ import $ from "jquery";
       margin-bottom: 100px;
     }
     p {
-      font-size: 18px;
+      font-size: 20px;
       color: #ffffff;
+      line-height: 1.8;
+      font-weight: 400;
     }
     img {
       margin: 100px 0;
-      width: 44%;
+      width: 90%;
     }
   }
   .solution_three {
     padding: 100px 10%;
     h5 {
-      font-size: 24px;
+      font-size: 20px;
       color: #000;
+      font-weight: 400;
       margin-bottom: 60px;
       margin-top: 100px;
     }
