@@ -46,7 +46,7 @@ import $ from "jquery";
         <img src="@/assets/img1/solution1.png" width="100%" />
       </div>
       <div class="solution_two">
-        <h5>基于数据的AI <br />4 Battery垂直大模型</h5>
+        <h5>AI 4 Battery垂直大模型</h5>
         <p>
           输入储能、动力等电池数据采用掩码自掩码(Masked
           Autoencoders，MAE)架构进行多元数据联合预训练，结合
@@ -54,7 +54,6 @@ import $ from "jquery";
           (fine-tune),即可实现下游任务适配,模型精度和效率明显提升。
         </p>
         <img src="@/assets/img1/solution2.png" />
-        <p>PM4B和AI4B融合，形成BATX技术底座，应用于各种下游场景和任务。</p>
       </div>
       <div class="solution_three">
         <h5>Multi-modal pre-training（多源数据联合预训练）</h5>
@@ -147,10 +146,11 @@ import $ from "jquery";
       color: #ffffff;
       line-height: 1.8;
       font-weight: 400;
+      width: 90%;
     }
     img {
       margin: 100px 0;
-      width: 90%;
+      width: 85%;
     }
   }
   .solution_three {
