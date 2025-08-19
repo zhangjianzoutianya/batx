@@ -62,7 +62,7 @@ console.log(id.value);
         </div>
       </div>
     </div>
-    <div :class="{ team: true, team_2: id == 2 }" v-if="id == 2">
+    <!-- <div :class="{ team: true, team_2: id == 2 }" v-if="id == 2">
       <div class="title">
         <h5>团队优势</h5>
         <p>
@@ -86,7 +86,7 @@ console.log(id.value);
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div :class="{ team: true, team_3: id == 3 }" v-if="id == 3">
       <div class="title">
         <h5>团队优势</h5>
