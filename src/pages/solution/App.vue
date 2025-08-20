@@ -132,7 +132,7 @@ import $ from "jquery";
     }
   }
   .solution_two {
-    padding: 60px 10% 100px 10%;
+    padding: 90px 10% 100px 10%;
     background: url("@/assets/img1/solution2_bg.png") no-repeat;
     background-size: cover;
     > h5 {
@@ -147,9 +147,9 @@ import $ from "jquery";
       line-height: 1.8;
       font-weight: 400;
       width: 90%;
+      margin-bottom: 100px;
     }
     img {
-      margin: 100px 0;
       width: 85%;
     }
   }

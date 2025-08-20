@@ -24,7 +24,7 @@ const id = ref(params.get("id"));
               <h5>热安全仿真与建模</h5>
               <p>
                 以热安全为主线，揭示电池滥用、失效和蔓延的机理，
-                服务主动安全和被动安全
+                服务主动安全和被动安全。
               </p>
             </div>
 
@@ -56,11 +56,9 @@ const id = ref(params.get("id"));
                   电池系统包含“热-气-电-燃烧”等多条路径，单体出发热失控后会蔓延到模组及电池包。
                 </p>
                 <p>
-                  我们建立电池单体的三维热失控机理模型、系统热-气全耦合的热失控蔓延模型，并基于
-                  模型精准预测电池系统失效的“失效热溢-气体流动-耦合换热”过程，精准解析热失控
-                  与蔓延的能流，并进行能流解析与调控方案研究。
+                  我们建立电池单体的三维热失控机理模型、系统热-气全耦合的热失控蔓延模型，并基于模型精准预测电池系统失效的“失效热溢-气体流动-耦合换热”过程，精准解析热失控与蔓延的能流，并进行能流解析与调控方案研究。
                 </p>
-                <span>点击查看</span>
+                <!-- <span>点击查看</span> -->
               </div>
               <div class="wayRight">
                 <img src="@/assets/img1/hot4.png" width="100%" />
@@ -463,10 +461,10 @@ const id = ref(params.get("id"));
           margin: 0 auto;
           z-index: 1;
           .left_img {
-            width: 50%;
+            width: 37%;
           }
           .right_img {
-            width: 45%;
+            width: 44%;
           }
         }
       }
@@ -481,17 +479,17 @@ const id = ref(params.get("id"));
         .runaway {
           display: flex;
           justify-content: space-between; /* 左右贴边 */
-          align-items: center;
+          align-items: flex-start;
           .wayLeft {
             background-color: #fff;
-            width: 60%;
-            padding: 60px 140px 60px 60px;
+            width: 50%;
+            padding: 60px;
             box-shadow: -4px 5px 9px -1px #e0e0e0;
             border-radius: 20px;
+            margin-top: 20px;
             p {
               font-size: 20px;
               color: #010101;
-              margin-bottom: 30px;
             }
             span {
               width: 160px;
@@ -548,9 +546,9 @@ const id = ref(params.get("id"));
         background-color: #2572fa;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         .earlyLeft {
-          width: 30%;
+          width: 37%;
           h5 {
             font-size: 36px;
             color: #ffffff;
@@ -560,6 +558,7 @@ const id = ref(params.get("id"));
             font-size: 20px;
             color: #ffffff;
             font-weight: 400;
+            line-height: 1.8;
           }
           span {
             width: 160px;
@@ -575,7 +574,7 @@ const id = ref(params.get("id"));
           }
         }
         .earlyRight {
-          width: 53%;
+          width: 55%;
         }
       }
       .security_six {
@@ -595,11 +594,12 @@ const id = ref(params.get("id"));
             p {
               font-size: 20px;
               color: #010101;
+              line-height: 1.8;
             }
           }
           .designRight {
             width: 100%;
-            margin-top: 50px;
+            margin-top: 100px;
           }
         }
         .designImg {

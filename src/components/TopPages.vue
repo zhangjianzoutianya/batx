@@ -52,7 +52,7 @@ onMounted(() => {
         </a>
       </div>
       <div class="nav_menu">
-        <a href="http://101.132.147.52:12392/real">
+        <a href="http://101.132.147.52:12392/real" target="_blank">
           <span>BATX平台</span>
         </a>
       </div>
@@ -158,7 +158,7 @@ onMounted(() => {
       a {
         span {
           color: #fff;
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 500;
           padding: 0 20px;
           height: 35px;
@@ -211,7 +211,7 @@ onMounted(() => {
         margin: 0px;
         a {
           color: #a3a3a3;
-          font-size: 14px;
+          font-size: 16px;
           line-height: 50px;
           padding: 0 20px;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

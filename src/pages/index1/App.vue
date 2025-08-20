@@ -377,7 +377,6 @@ onBeforeUnmount(() => {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    background-color: #ededed;
     aspect-ratio: 716 / 230;
     transform: none;
     transform-origin: 50% 50% 0px;
@@ -387,6 +386,8 @@ onBeforeUnmount(() => {
     .item {
       overflow: hidden;
       position: relative;
+      background-color: #ededed;
+
       .writ {
         position: absolute;
         top: 40px;
@@ -459,6 +460,7 @@ onBeforeUnmount(() => {
       }
     }
     .item:hover {
+      cursor: pointer;
       .txt {
         background: rgba(228, 239, 249, 0.85);
       }
@@ -551,6 +553,7 @@ onBeforeUnmount(() => {
       }
     }
     .solu_box:hover {
+      cursor: pointer;
       .imgBg {
         background: rgba(0, 0, 0, 0.5);
       }

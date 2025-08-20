@@ -51,7 +51,7 @@ onMounted(() => {
       <a href="productService.html?id=1" class="hasNav" data-index="3">
         <span>产品服务</span>
       </a>
-      <a href="http://101.132.147.52:12392/real">
+      <a href="http://101.132.147.52:12392/real" target="_blank">
         <span>BATX平台</span>
       </a>
       <a href="news.html">
@@ -149,7 +149,7 @@ onMounted(() => {
     a {
       span {
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
         padding: 0 20px;
         height: 35px;
@@ -199,7 +199,7 @@ onMounted(() => {
         margin: 0px;
         a {
           color: rgba(0, 0, 0, 0.6);
-          font-size: 14px;
+          font-size: 16px;
           line-height: 50px;
           padding: 0 20px;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
