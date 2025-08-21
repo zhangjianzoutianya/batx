@@ -35,7 +35,9 @@ const id = ref(params.get("id"));
               <h5>热失控机理</h5>
               <p>高比能、高安全等多条电池路线的尽头均含安全问题。</p>
               <p>
-                我们提供从热失控触发方案设计、实验测试、机理分析等的一站式服务。深度分析机械滥用、电滥用、热滥用等模式导致的电池热失控，从微观机理到宏观现象，探明关键机理与副反应，在化学反应层面量化热失控，奠定热失控建模、调控等的基础。
+                我们提供从热失控触发方案设计、实验测试、机理分析等的一站式服务。深度分析机械滥用、电滥用、<br />
+                热滥用等模式导致的电池热失控，从微观机理到宏观现象，探明关键机理与副反应，<br />
+                在化学反应层面量化热失控，奠定热失控建模、调控等的基础。
               </p>
             </div>
 
@@ -100,7 +102,10 @@ const id = ref(params.get("id"));
                   良好的热管理不仅能有效降低安全风险，还能提升整车能量管理效率。
                 </p>
                 <p>
-                  我们从单体到电池包建立适应多环境、多工况的热管理数字孪生模型，AI数据驱动将仿真时间从4h缩短至5min，且全域温度预测误差<1℃。我们提供风冷、直冷、浸没式液冷、两相浸没式冷却等多种热管理设计方案，满足不同电池包的需求。
+                  我们从单体到电池包建立适应多环境、多工况的热管理数字孪生模型，AI数据驱动将仿真时间
+                  <br />
+                  从4h缩短至5min，且全域温度预测误差
+                  >1℃。我们提供风冷、直冷、浸没式液冷、两相浸没式<br />冷却等多种热管理设计方案，满足不同电池包的需求。
                 </p>
               </div>
               <div class="designRight">
@@ -199,7 +204,7 @@ const id = ref(params.get("id"));
                   <p>比原充电速度提高<span><50+%</span></p>
                   <p>全程充电不析锂不过温</p>
                   <p>老化后模型自适应更新</p>
-                  <button>充放电控制</button>
+                  <button>快充控制</button>
                 </div>
                 <div class="form_on">
                   <p>弛豫电压微分定量析锂</p>
@@ -254,18 +259,19 @@ const id = ref(params.get("id"));
             </div>
           </div>
           <div class="quick_three">
-            <div class="quick_text">
-              <h5>快充控制</h5>
-              <p>
-                充电一直是制约电动汽车用户体验的最大痛点，“油电同速”是行业追求的目标。
-              </p>
-              <p>
-                从新生到老化、从单体到系统，我们提供宽时域、多层级的电池系统全生命周期最优快充方法，在保证安全和寿命的基础上最大化充电速度。帮助汽车实现充电5min，续航200~400km(取决于电池包能量和性能)，提升产品竞争力。
-              </p>
-              <span>点击查看</span>
-            </div>
-            <div class="quick_img">
-              <img src="@/assets/img1/elect3.png" width="100%" />
+            <h5>快充控制</h5>
+            <div class="quick_three_list">
+              <div class="quick_text">
+                <p>
+                  充电一直是制约电动汽车用户体验的最大痛点，“油电<br />同速”是行业追求的目标。
+                </p>
+                <p>
+                  从新生到老化、从单体到系统，我们提供宽时域、多层级<br />的电池系统全生命周期最优快充方法，在保证安全和寿<br />命的基础上最大化充电速度。帮助汽车实现充电5min，<br />续航200~400km(取决于电池包能量和性能)，提升产<br />品竞争力。
+                </p>
+              </div>
+              <div class="quick_img">
+                <img src="@/assets/img1/elect3.png" width="100%" />
+              </div>
             </div>
           </div>
           <div class="lifetime_four">
@@ -315,6 +321,7 @@ const id = ref(params.get("id"));
           <div class="model">
             <div class="mod_one">
               <h5>AI管理大模型</h5>
+              <p></p>
               <img src="@/assets/img1/ai_g1.png" width="100%" />
             </div>
             <div class="mod_two">
@@ -356,7 +363,7 @@ const id = ref(params.get("id"));
               <div class="make">
                 <h5>AI制造—智能缺陷检测</h5>
                 <p>
-                  3D线扫+AI驱动， 点云融合特性提取与训练，赋能极片厚度缺陷检测
+                  3D线扫+AI驱动， 点云融合特性提取与训练，赋能极片厚度缺陷检测。
                 </p>
                 <img src="@/assets/img1/ai_zn1.png" width="100%" />
               </div>
@@ -437,7 +444,6 @@ const id = ref(params.get("id"));
         }
         .title {
           margin-bottom: 160px;
-          width: 50%;
           position: relative;
           z-index: 1;
           h5 {
@@ -548,7 +554,7 @@ const id = ref(params.get("id"));
         justify-content: space-between;
         align-items: flex-start;
         .earlyLeft {
-          width: 37%;
+          width: 38%;
           h5 {
             font-size: 36px;
             color: #ffffff;
@@ -585,7 +591,6 @@ const id = ref(params.get("id"));
           // justify-content: space-between;
           // align-items: center;
           .designLeft {
-            width: 50%;
             h5 {
               font-size: 36px;
               color: #010101;
@@ -797,40 +802,43 @@ const id = ref(params.get("id"));
         }
       }
       .quick_three {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 200px 10%;
         background-color: #fcfcfc;
-        .quick_text {
-          width: 30%;
-          h5 {
-            font-size: 36px;
-            color: #010101;
-            margin-bottom: 50px;
-          }
-          p {
-            font-size: 20px;
-            font-weight: 400;
-            color: #010101;
-            margin-bottom: 20px;
-            line-height: 1.8;
-          }
-          span {
-            width: 160px;
-            height: 50px;
-            text-align: center;
-            background-color: #2a57eb;
-            color: #ffffff;
-            font-size: 20px;
-            display: inline-block;
-            line-height: 50px;
-            border-radius: 30px;
-            margin-top: 30px;
-          }
+        > h5 {
+          font-size: 36px;
+          color: #010101;
+          margin-bottom: 50px;
         }
-        .quick_img {
-          width: 66%;
+        .quick_three_list {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          .quick_text {
+            width: 30%;
+
+            p {
+              font-size: 20px;
+              font-weight: 400;
+              color: #010101;
+              margin-bottom: 20px;
+              line-height: 1.8;
+            }
+            span {
+              width: 160px;
+              height: 50px;
+              text-align: center;
+              background-color: #2a57eb;
+              color: #ffffff;
+              font-size: 20px;
+              display: inline-block;
+              line-height: 50px;
+              border-radius: 30px;
+              margin-top: 30px;
+            }
+          }
+          .quick_img {
+            width: 66%;
+          }
         }
       }
       .lifetime_four {
@@ -839,7 +847,8 @@ const id = ref(params.get("id"));
         .tit_top {
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
+
           .tit_left {
             h5 {
               font-size: 36px;
@@ -865,13 +874,14 @@ const id = ref(params.get("id"));
           .remai_all {
             width: 50%;
             .remai_img {
-              margin-bottom: 60px;
+              margin-bottom: 40px;
               background-color: #fff;
             }
             p {
               font-size: 25px;
               text-align: center;
               color: #010101;
+              margin: 0;
             }
           }
         }
@@ -912,7 +922,7 @@ const id = ref(params.get("id"));
               }
               p {
                 color: #fff;
-                font-size: 28px;
+                font-size: 26px;
                 margin-bottom: 0;
                 text-align: center;
                 font-weight: 400;

@@ -47,6 +47,16 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", handleScroll);
 });
+const goToDetails = (id) => {
+  window.location.href = `solutionDetails.html?id=${id}`;
+};
+
+const goToPage = (id) => {
+  window.location.href = `productService.html?id=${id}`;
+};
+const goSolu = (id) => {
+  window.location.href = `solutionDetails.html?id=${id}`;
+};
 </script>
 
 <template>
@@ -75,7 +85,7 @@ onBeforeUnmount(() => {
     <div class="index_pro">
       <h5>技术平台</h5>
       <div class="index_pro_box">
-        <div class="item item1">
+        <div class="item item1" @click="goSolu(1)">
           <div class="txt"></div>
           <div class="writ">
             <h5>机理模型</h5>
@@ -118,7 +128,7 @@ onBeforeUnmount(() => {
     <div class="index_solu">
       <h5>解决方案</h5>
       <div class="index_solu_box">
-        <div class="solu_box solu_box1">
+        <div class="solu_box solu_box1" @click="goToDetails(1)">
           <div class="imgBg"></div>
           <div class="img">
             <img src="@/assets/img1/solu1.jpg" />
@@ -127,18 +137,21 @@ onBeforeUnmount(() => {
             <h5>系统产品开发</h5>
             <p>System Product R&D</p>
           </div>
+          <!-- <router-link to="/solutionDetails" class="link">了解更多</router-link> -->
         </div>
-        <div class="solu_box solu_box2">
+
+        <div class="solu_box solu_box2" @click="goToDetails(2)">
           <div class="imgBg"></div>
           <div class="img">
             <img src="@/assets/img1/solu2.jpg" />
           </div>
           <div class="text">
             <h5>产线智能制造</h5>
-            <p>Smart Manufacturin</p>
+            <p>Smart Manufacturing</p>
           </div>
+          <!-- <router-link to="/solutionDetails" class="link">了解更多</router-link> -->
         </div>
-        <div class="solu_box solu_box3">
+        <div class="solu_box solu_box3" @click="goToDetails(3)">
           <div class="imgBg"></div>
           <div class="img">
             <img src="@/assets/img1/solu3.jpg" />
@@ -147,16 +160,18 @@ onBeforeUnmount(() => {
             <h5>能源管理运维</h5>
             <p>Energy Management & Operation</p>
           </div>
+          <!-- <router-link to="/solutionDetails" class="link">了解更多</router-link> -->
         </div>
-        <div class="solu_box solu_box4">
+        <div class="solu_box solu_box4" @click="goToDetails(4)">
           <div class="imgBg"></div>
           <div class="img">
             <img src="@/assets/img1/solu4.jpg" />
           </div>
           <div class="text">
             <h5>资产检测维修</h5>
-            <p>Asset Inspection & Maintenanc</p>
+            <p>Asset Inspection & Maintenance</p>
           </div>
+          <!-- <router-link to="/solutionDetails" class="link">了解更多</router-link> -->
         </div>
       </div>
     </div>
@@ -170,7 +185,7 @@ onBeforeUnmount(() => {
             transform: `translateX(-${translateX}px) translateY(${translateY}px)`,
           }"
         >
-          <div class="item">
+          <div class="item" @click="goToPage(1)">
             <div class="img">
               <img src="@/assets/img1/prod1.jpg" />
             </div>
@@ -178,7 +193,8 @@ onBeforeUnmount(() => {
               <p>热失控机理</p>
             </div>
           </div>
-          <div class="item">
+
+          <div class="item" @click="goToPage(1)">
             <div class="img">
               <img src="@/assets/img1/prod2.jpg" />
             </div>
@@ -186,7 +202,7 @@ onBeforeUnmount(() => {
               <p>热安全预警</p>
             </div>
           </div>
-          <div class="item">
+          <div class="item" @click="goToPage(2)">
             <div class="img">
               <img src="@/assets/img1/prod3.jpg" />
             </div>
@@ -194,7 +210,7 @@ onBeforeUnmount(() => {
               <p>电性能仿真</p>
             </div>
           </div>
-          <div class="item">
+          <div class="item" @click="goToPage(2)">
             <div class="img">
               <img src="@/assets/img1/prod7.jpg" />
             </div>
@@ -202,7 +218,7 @@ onBeforeUnmount(() => {
               <p>状态估计</p>
             </div>
           </div>
-          <div class="item">
+          <div class="item" @click="goToPage(3)">
             <div class="img">
               <img src="@/assets/img1/prod8.jpg" />
             </div>
@@ -210,7 +226,7 @@ onBeforeUnmount(() => {
               <p>AI电池管理</p>
             </div>
           </div>
-          <div class="item">
+          <div class="item" @click="goToPage(1)">
             <div class="img">
               <img src="@/assets/img1/prod4.jpg" />
             </div>
@@ -218,7 +234,7 @@ onBeforeUnmount(() => {
               <p>热蔓延仿真</p>
             </div>
           </div>
-          <div class="item">
+          <div class="item" @click="goToPage(1)">
             <div class="img">
               <img src="@/assets/img1/prod5.jpg" />
             </div>
@@ -226,7 +242,7 @@ onBeforeUnmount(() => {
               <p>热管理设计</p>
             </div>
           </div>
-          <div class="item">
+          <div class="item" @click="goToPage(2)">
             <div class="img">
               <img src="@/assets/img1/prod6.jpg" />
             </div>
@@ -234,7 +250,7 @@ onBeforeUnmount(() => {
               <p>充放电控制</p>
             </div>
           </div>
-          <div class="item">
+          <div class="item" @click="goToPage(2)">
             <div class="img">
               <img src="@/assets/img1/prod10.jpg" />
             </div>
@@ -242,7 +258,7 @@ onBeforeUnmount(() => {
               <p>寿命预测</p>
             </div>
           </div>
-          <div class="item">
+          <div class="item" @click="goToPage(3)">
             <div class="img">
               <img src="@/assets/img1/prod11.jpg" />
             </div>
@@ -312,7 +328,7 @@ onBeforeUnmount(() => {
         </div>
       </div>
     </div>
-    <Footer />
+    <Footer1 />
   </div>
 </template>
 

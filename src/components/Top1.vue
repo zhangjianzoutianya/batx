@@ -96,7 +96,7 @@ onMounted(() => {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 9;
+  z-index: 999;
   padding: 25px 70px;
   position: fixed;
   top: 0;

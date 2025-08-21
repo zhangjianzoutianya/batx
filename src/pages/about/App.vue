@@ -53,8 +53,11 @@ const handleSubmit = () => {
     <div class="about_profile">
       <h2>公司概况</h2>
       <div class="profile">
-        <p>使命：电池全生命周期数智化服务 愿景：全球领先的电池AI公司</p>
-        <p>价值观：客户至上 长期奋斗，开放协作 守正创新</p>
+        <p>
+          使命：电池全生命周期数智化服务<br />愿景：全球领先的电池AI公司
+          <br />价值观：客户至上 长期奋斗，开放协作 守正创新
+        </p>
+
         <p>
           周期智能孵化于清华大学欧阳明高教授团队，深耕新能源电池与人工智能的学科交叉，结合清华新能源动力系统团队沉淀10余年的专业知识与领先的AI能力，构建电池行业AI 4 battery的垂直模型和PM 4 Battery的机理模型，打造BATX技术平台；基于平台在电池系统产品开发、能源管理运维、资产检测维修等全生命周期场景为客户提供软硬一体的解决方案。
         </p>
@@ -507,7 +510,7 @@ const handleSubmit = () => {
     h2 {
       font-size: 36px;
       margin-bottom: 40px;
-      color: #333;
+      color: #010101;
       text-align: left;
     }
     .profile {
@@ -515,8 +518,9 @@ const handleSubmit = () => {
       p {
         font-size: 20px;
         font-weight: 400;
-        color: #333;
+        color: #010101;
         line-height: 1.8;
+        margin-bottom: 30px;
       }
     }
   }
@@ -526,13 +530,13 @@ const handleSubmit = () => {
     h2 {
       font-size: 36px;
       margin-bottom: 90px;
-      color: #333;
+      color: #010101;
       text-align: left;
     }
     p {
       font-size: 20px;
       font-weight: 400;
-      color: #333;
+      color: #010101;
     }
     .team {
       display: flex;
@@ -812,20 +816,21 @@ const handleSubmit = () => {
   }
   .mymo {
     position: fixed;
-    z-index: 999 !important;
+    z-index: 11 !important;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: #cccccc;
     .modal-content {
       background: #cccccc;
       margin: 100px auto;
-      padding: 20px;
-      width: 80%;
+      padding: 20px 0;
+      width: 88%;
       border-radius: 8px;
       .close {
         text-align: right;
+        margin-top: 20px;
         button {
           width: 30px;
           height: 30px;
@@ -838,7 +843,7 @@ const handleSubmit = () => {
       }
 
       .team {
-        padding: 80px 50px;
+        padding: 80px 0;
         // background-color: #cccccc;
         .title {
           margin-bottom: 40px;
@@ -871,7 +876,7 @@ const handleSubmit = () => {
 
           .right {
             flex: 0 0 75%;
-            padding: 20px;
+            padding: 20px 80px;
             box-sizing: border-box;
             h2 {
               color: #2a57eb;
@@ -881,7 +886,7 @@ const handleSubmit = () => {
             h5 {
               color: #101010;
               font-size: 15px;
-              margin: 0;
+              margin: 0 0 40px 0;
             }
             .text {
               margin-top: 20px;

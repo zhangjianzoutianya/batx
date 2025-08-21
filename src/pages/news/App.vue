@@ -62,7 +62,7 @@ const newsList = ref([
 //   });
 // };
 function goToDetail(id) {
-  window.location.href = `/newsDetails.html?id=${id}`;
+  window.location.href = `newsDetails.html?id=${id}`;
 }
 </script>
 

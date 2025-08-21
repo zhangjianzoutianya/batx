@@ -92,12 +92,43 @@ const goHome = () => {
     <div class="bott">
       <div class="phone">
         <div class="p_ico">
-          <img src="@/assets/img1/foot_icon1.png" />
-          <img src="@/assets/img1/foot_icon2.png" />
-          <img src="@/assets/img1/foot_icon3.png" />
-          <img src="@/assets/img1/foot_icon4.png" />
-          <img src="@/assets/img1/foot_icon5.png" />
-          <img src="@/assets/img1/foot_icon6.png" />
+          <div class="icon-item" data-index="1">
+            <img src="@/assets/img1/foot_icon1.png" alt="图标1" height="24" />
+            <!-- 对应的二维码 -->
+            <div class="qrcode">
+              <img src="@/assets/img1/foot1.jpg" alt="二维码1" />
+            </div>
+          </div>
+          <div class="icon-item" data-index="2">
+            <img src="@/assets/img1/foot_icon2.png" alt="图标2" height="24" />
+            <div class="qrcode">
+              <img src="@/assets/img1/foot2.jpg" alt="二维码2" />
+            </div>
+          </div>
+          <div class="icon-item" data-index="3">
+            <img src="@/assets/img1/foot_icon3.png" alt="图标3" height="24" />
+            <div class="qrcode">
+              <img src="@/assets/img1/foot3.jpg" alt="二维码3" />
+            </div>
+          </div>
+          <div class="icon-item" data-index="4">
+            <img src="@/assets/img1/foot_icon4.png" alt="图标4" height="24" />
+            <div class="qrcode">
+              <img src="@/assets/img1/foot4.jpg" alt="二维码4" />
+            </div>
+          </div>
+          <div class="icon-item" data-index="5">
+            <img src="@/assets/img1/foot_icon5.png" alt="图标5" height="24" />
+            <div class="qrcode">
+              <img src="@/assets/img1/foot5.jpg" alt="二维码5" />
+            </div>
+          </div>
+          <div class="icon-item" data-index="6">
+            <img src="@/assets/img1/foot_icon6.png" alt="图标6" height="24" />
+            <div class="qrcode">
+              <img src="@/assets/img1/foot6.jpg" alt="二维码6" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="line"></div>
@@ -174,9 +205,31 @@ const goHome = () => {
         position: absolute;
         bottom: 0;
         right: 8%;
-        img {
-          height: 24px;
-          margin-left: 10px;
+        display: flex;
+        gap: 10px; /* 图标之间的间距 */
+        justify-content: center; /* 水平居中 */
+        .icon-item {
+          position: relative;
+
+          .qrcode {
+            position: absolute; /* 绝对定位，相对于父元素 */
+            top: 30px; /* 二维码显示在图标下方 */
+            left: 50%;
+            transform: translateX(-50%); /* 水平居中 */
+            width: 66px; /* 二维码宽度 */
+            height: 66px; /* 二维码高度 */
+            opacity: 0; /* 默认隐藏 */
+            visibility: hidden; /* 默认不可见 */
+            transition: all 0.3s ease; /* 过渡动画 */
+            z-index: 10; /* 确保显示在其他元素上方 */
+          }
+        }
+        .icon-item:hover {
+          cursor: pointer;
+        }
+        .icon-item:hover .qrcode {
+          opacity: 1;
+          visibility: visible;
         }
       }
     }

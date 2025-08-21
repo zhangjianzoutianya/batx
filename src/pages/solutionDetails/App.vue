@@ -202,7 +202,9 @@ const images4 = [
                 v-for="(item, index) in images"
                 :key="index"
               >
-                <img :src="item.src" />
+                <div class="image-item-img">
+                  <img :src="item.src" />
+                </div>
                 <p class="caption">{{ item.caption }}</p>
               </div>
             </div>
@@ -252,7 +254,9 @@ const images4 = [
                 v-for="(item, index) in images2"
                 :key="index"
               >
-                <img :src="item.src" />
+                <div class="image-item-img">
+                  <img :src="item.src" />
+                </div>
                 <p class="caption">{{ item.caption }}</p>
               </div>
             </div>
@@ -303,7 +307,9 @@ const images4 = [
                 v-for="(item, index) in images3"
                 :key="index"
               >
-                <img :src="item.src" />
+                <div class="image-item-img">
+                  <img :src="item.src" />
+                </div>
                 <p class="caption">{{ item.caption }}</p>
               </div>
             </div>
@@ -353,7 +359,9 @@ const images4 = [
                 v-for="(item, index) in images4"
                 :key="index"
               >
-                <img :src="item.src" />
+                <div class="image-item-img">
+                  <img :src="item.src" />
+                </div>
                 <p class="caption">{{ item.caption }}</p>
               </div>
             </div>
@@ -443,10 +451,14 @@ const images4 = [
           width: 80%;
           margin: 0 auto;
           .image-item {
-            img {
-              width: 100%;
-              height: auto;
-              display: block;
+            .image-item-img {
+              overflow: hidden;
+              img {
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: transform 0.5s ease; /* 过渡动画：0.5秒内平滑放大 */
+              }
             }
 
             .caption {
@@ -456,6 +468,10 @@ const images4 = [
               color: #333;
               font-weight: 400;
             }
+          }
+          .image-item:hover .image-item-img img {
+            transform: scale(1.1);
+            cursor: pointer;
           }
         }
       }
