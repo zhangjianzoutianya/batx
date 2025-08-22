@@ -42,6 +42,106 @@ onMounted(() => {
   $(".banner").height($(window).height());
   console.log($(".banner").height());
   window.addEventListener("scroll", handleScroll);
+
+  const marqueeContentLeft = document.querySelector(
+    ".marquee-left .marquee-content"
+  );
+  if (marqueeContentLeft) {
+    const images = marqueeContentLeft.querySelectorAll("img");
+    let loadedImages = 0;
+    const imageCount = images.length;
+    let totalWidth = 0;
+
+    images.forEach((img) => {
+      if (img.complete) {
+        totalWidth += img.clientWidth;
+        loadedImages++;
+        if (loadedImages === imageCount) {
+          setLeftAnimation(totalWidth / 2, imageCount / 2, marqueeContentLeft);
+        }
+      } else {
+        img.onload = () => {
+          totalWidth += img.clientWidth;
+          loadedImages++;
+          if (loadedImages === imageCount) {
+            setLeftAnimation(
+              totalWidth / 2,
+              imageCount / 2,
+              marqueeContentLeft
+            );
+          }
+        };
+      }
+    });
+  }
+
+  function setLeftAnimation(contentWidth, halfImageCount, element) {
+    const computedStyle = getComputedStyle(element);
+    const gap =
+      parseFloat(computedStyle.gap) || parseFloat(computedStyle.columnGap) || 0;
+    const totalGap = gap * (halfImageCount - 1);
+    const finalWidth = contentWidth + totalGap;
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes scroll-left {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-${finalWidth}px); }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  const marqueeContentRight = document.querySelector(
+    ".marquee-right .marquee-content"
+  );
+  if (marqueeContentRight) {
+    const images = marqueeContentRight.querySelectorAll("img");
+    let loadedImages = 0;
+    const imageCount = images.length;
+    let totalWidth = 0;
+
+    images.forEach((img) => {
+      if (img.complete) {
+        totalWidth += img.clientWidth;
+        loadedImages++;
+        if (loadedImages === imageCount) {
+          setRightAnimation(
+            totalWidth / 2,
+            imageCount / 2,
+            marqueeContentRight
+          );
+        }
+      } else {
+        img.onload = () => {
+          totalWidth += img.clientWidth;
+          loadedImages++;
+          if (loadedImages === imageCount) {
+            setRightAnimation(
+              totalWidth / 2,
+              imageCount / 2,
+              marqueeContentRight
+            );
+          }
+        };
+      }
+    });
+  }
+
+  function setRightAnimation(contentWidth, halfImageCount, element) {
+    const computedStyle = getComputedStyle(element);
+    const gap =
+      parseFloat(computedStyle.gap) || parseFloat(computedStyle.columnGap) || 0;
+    const totalGap = gap * (halfImageCount - 1);
+    const finalWidth = contentWidth + totalGap;
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @keyframes scroll-right {
+        0% { transform: translateX(-${finalWidth}px); }
+        100% { transform: translateX(0); }
+      }
+    `;
+    document.head.appendChild(style);
+  }
 });
 
 onBeforeUnmount(() => {
@@ -297,10 +397,26 @@ const goSolu = (id) => {
           <img src="@/assets/img1/partner7.png" alt="logo" />
           <img src="@/assets/img1/partner8.png" alt="logo" />
           <img src="@/assets/img1/partner9.png" alt="logo" />
+          <img src="@/assets/img1/partner1.png" alt="logo" />
+          <img src="@/assets/img1/partner2.png" alt="logo" />
+          <img src="@/assets/img1/partner4.png" alt="logo" />
+          <img src="@/assets/img1/partner5.png" alt="logo" />
+          <img src="@/assets/img1/partner6.png" alt="logo" />
+          <img src="@/assets/img1/partner7.png" alt="logo" />
+          <img src="@/assets/img1/partner8.png" alt="logo" />
+          <img src="@/assets/img1/partner9.png" alt="logo" />
         </div>
       </div>
       <div class="marquee marquee-right">
         <div class="marquee-content">
+          <img src="@/assets/img1/partner10.png" alt="logo" />
+          <img src="@/assets/img1/partner11.png" alt="logo" />
+          <img src="@/assets/img1/partner12.png" alt="logo" />
+          <img src="@/assets/img1/partner13.png" alt="logo" />
+          <img src="@/assets/img1/partner14.png" alt="logo" />
+          <img src="@/assets/img1/partner15.png" alt="logo" />
+          <img src="@/assets/img1/partner16.png" alt="logo" />
+          <img src="@/assets/img1/partner17.png" alt="logo" />
           <img src="@/assets/img1/partner10.png" alt="logo" />
           <img src="@/assets/img1/partner11.png" alt="logo" />
           <img src="@/assets/img1/partner12.png" alt="logo" />
@@ -717,38 +833,36 @@ const goSolu = (id) => {
     .marquee-content {
       display: inline-flex;
       align-items: center;
-      gap: 56px; /* logo 之间的间距 */
       img {
         height: 56px; /* 根据需要调整 */
         width: auto;
+        padding: 0 28px;
       }
     }
   }
 }
-/* 第一排：从右向左 */
 .marquee-left .marquee-content {
   animation: scroll-left 20s linear infinite;
 }
-/* 第二排：从左向右 */
 .marquee-right .marquee-content {
   animation: scroll-right 20s linear infinite;
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  } /* 往左移动一半内容宽度 */
-}
+// @keyframes scroll-left {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(-50.6%);
+//   }
+// }
 
-@keyframes scroll-right {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  } /* 往右移回来 */
-}
+// @keyframes scroll-right {
+//   0% {
+//     transform: translateX(-50.7%);
+//   }
+//   100% {
+//     transform: translateX(0);
+//   }
+// }
 </style>

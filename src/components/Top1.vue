@@ -211,17 +211,17 @@ onMounted(() => {
       }
       &:nth-child(1) {
         p {
-          padding-left: 56.3%;
+          padding-left: 53.8%;
         }
       }
       &:nth-child(2) {
         p {
-          padding-left: 61.5%;
+          padding-left: 59.5%;
         }
       }
       &:nth-child(3) {
         p {
-          padding-left: 67%;
+          padding-left: 65.3%;
         }
       }
     }

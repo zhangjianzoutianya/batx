@@ -25,6 +25,7 @@ export default defineConfig({
         productService: resolve(__dirname, "productService.html"),
         about: resolve(__dirname, "about.html"),
         news: resolve(__dirname, "news.html"),
+        newsDetails: resolve(__dirname, "newsDetails.html"),
       },
     },
   },

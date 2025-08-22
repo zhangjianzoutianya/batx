@@ -51,6 +51,61 @@ const newsList = ref([
     date: "2025年07月22日",
     imgUrl: news6,
   },
+  {
+    id: 7,
+    title: "2025世界人工智能大会（WAIC）",
+    date: "2025年07月22日",
+    imgUrl: news1,
+  },
+  {
+    id: 8,
+    title: "我司一举拿下ISO三体系认证+AAA信用证书",
+    date: "2025年07月22日",
+    imgUrl: news2,
+  },
+  {
+    id: 9,
+    title: "周期智能受邀参加2025国际气候与环境治理青年论坛",
+    date: "2025年07月22日",
+    imgUrl: news3,
+  },
+  {
+    id: 10,
+    title: "周期智能亮相香港NovaX国际创投嘉年华",
+    date: "2025年07月22日",
+    imgUrl: news4,
+  },
+  {
+    id: 11,
+    title:
+      "BATX周期智能获「第二届“清醒杯”清华大学大模型应用创新挑战赛」成长组季军",
+    date: "2025年07月22日",
+    imgUrl: news5,
+  },
+  {
+    id: 12,
+    title: "周期智能获国家重点研发计划重点专项用户证书",
+    date: "2025年07月22日",
+    imgUrl: news6,
+  },
+  {
+    id: 13,
+    title: "2025世界人工智能大会（WAIC）",
+    date: "2025年07月22日",
+    imgUrl: news1,
+  },
+  {
+    id: 14,
+    title: "我司一举拿下ISO三体系认证+AAA信用证书",
+    date: "2025年07月22日",
+    imgUrl: news2,
+  },
+  {
+    id: 15,
+    title: "周期智能受邀参加2025国际气候与环境治理青年论坛",
+    date: "2025年07月22日",
+    imgUrl: news3,
+  },
 ]);
 
 // const router = useRouter();
@@ -70,7 +125,7 @@ function goToDetail(id) {
   <div class="news">
     <TopPages />
     <div class="banner">
-      <img src="@/assets/img1/banner_news.jpg" width="100%" />
+      <img src="@/assets/img1/banner_news2.jpg" width="100%" />
     </div>
     <div class="news_content">
       <div class="newsList">
@@ -108,7 +163,8 @@ function goToDetail(id) {
       .newsItem {
         width: calc(33.333% - 25px); /* 计算每个元素宽度（减去总间距） */
         margin: 0 12.5px 25px; /* 左右间距12.5px（总25px），底部间距25px */
-        margin-bottom: 90px;
+        margin-bottom: 60px;
+        cursor: pointer;
         .newsItem_img {
           margin-bottom: 35px;
         }

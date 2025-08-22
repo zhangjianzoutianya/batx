@@ -213,7 +213,7 @@ const goHome = () => {
 
           .qrcode {
             position: absolute; /* 绝对定位，相对于父元素 */
-            top: 30px; /* 二维码显示在图标下方 */
+            bottom: 40px; /* 二维码显示在图标下方 */
             left: 50%;
             transform: translateX(-50%); /* 水平居中 */
             width: 66px; /* 二维码宽度 */

@@ -463,7 +463,7 @@ const id = ref(params.get("id"));
           justify-content: space-between; /* 左右贴边 */
           align-items: center;
           position: relative;
-          width: 96%;
+          width: 100%;
           margin: 0 auto;
           z-index: 1;
           .left_img {
